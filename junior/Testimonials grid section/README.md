@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section
 
-(./screenshot.png)
+![](./screenshot.png)
 
 ## Welcome! 👋
 
