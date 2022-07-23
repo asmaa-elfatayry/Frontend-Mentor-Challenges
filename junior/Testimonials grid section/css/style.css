@@ -1,0 +1,144 @@
+*{
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed',sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 50px; 
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 'dan dan jon kir'
+    'jea pat pat kir';
+    grid-gap: 30px ;  
+  
+}
+.container > div{
+    border-radius: 10px;
+    padding: 40px ;
+}
+
+.container > div:nth-of-type(1){
+    background: url('../images/bg-pattern-quotation.svg') right 110px top 2px;
+    background-repeat: no-repeat;
+    background-size: 120px 130px;
+    background-color: hsl(263, 55%, 52%);
+    grid-area: dan;
+    color: hsl(0, 0%, 100%);;
+}
+.container div:nth-of-type(2){
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);;
+    grid-area: jon;
+}
+.container div:nth-of-type(3){
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jea;
+    color:  hsl(219, 29%, 14%);
+    padding-right: 80px;
+}
+.container div:nth-of-type(4){
+    background-color:hsl(219, 29%, 14%);
+    grid-area: pat;
+    color: hsl(0, 0%, 100%);;
+  
+}
+.container div:nth-of-type(5){
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(219, 29%, 14%);
+    grid-area: kir;
+    padding-right: 90px;
+}
+
+.container .flex-name{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.container .flex-name p{
+    font-weight: 400;
+    opacity: .5;
+    font-size: 13px;
+}
+.container .flex-name > div{
+display: flex;
+flex-direction: column;
+padding-left: 20px;
+gap: 5px;
+}
+.container img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px double #fff;
+}
+
+   
+   .container div h2{
+       margin: 20px auto;
+       font-size: 26px;
+       line-height: 1.2;
+       z-index: 2;
+       font-weight: 500;
+   }
+   .container div h2,
+   .container div h4{
+    font-family:'Barlow Semi Condensed' ;
+    font-weight: 500;
+   }
+   .container div q{
+       opacity: .7;
+       font-size: 13px;
+       font-weight: 400;
+       line-height: 1.3rem;
+      
+   }
+ 
+   /* responsive mobile screen */
+   @media (max-width:375px){
+    main{
+
+        margin: 60px auto; 
+    }
+    .container > div:nth-of-type(1){
+        background: url('../images/bg-pattern-quotation.svg') right 20px top 2px;
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        background-color: hsl(263, 55%, 52%);
+        grid-area: dan;
+        position: relative;
+        color: hsl(0, 0%, 100%);
+    }
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'dan' 'jon' 'jea' 'pat' 'kir';
+        width: 96%;      
+        grid-gap: 20px;      
+    }
+    .container div:nth-of-type(3){
+        padding-right: 30px;
+    }
+    .container div:nth-of-type(5){
+        padding-right: 30px;
+    }
+    
+    .container > div{
+       
+        padding: 20px 30px ;
+    }
+    
+    .container div h2{
+        font-size: 21px;
+
+    }
+   }
+ 
