@@ -1,6 +1,6 @@
 # Frontend Mentor - Fylo data storage component
 
-![Design preview for the Fylo data storage component coding challenge]
+
 ![](./screenshot.PNG)
 
 ## Welcome! 👋
@@ -9,8 +9,8 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/Fylo%20data%20storage%20component]
+- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/Fylo data storage component/]
 
 
 
