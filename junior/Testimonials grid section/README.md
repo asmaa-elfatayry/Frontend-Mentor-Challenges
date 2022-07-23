@@ -10,7 +10,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 
 - Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/Testimonials%20grid%20section]
-- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/]
+- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/Testimonials%20grid%20section/]
 
 
 
