@@ -1,0 +1,249 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:  url('../images/bg-desktop.png') right 0px bottom -40px;
+    background-color: hsl(229, 57%, 11%);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+}
+main
+{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: relative;
+    gap: 30px;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%,-50%);
+}
+.fylo{
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px 130px 40px 30px;
+
+    h1{
+      margin-bottom: 20px;
+      img{
+        width: 125px;
+      }
+    }
+    .icons{
+        display: flex;
+        justify-content: left;
+        gap: 15px;
+
+        img{
+           
+            background-color: hsl(229, 57%, 11%);
+            padding: 8px 12px;
+            border-radius: 10px;
+        }
+      
+    }
+}
+
+.storge{
+
+
+
+    background-color: hsl(228, 56%, 26%);
+    width: 530px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    position: relative;
+    color: hsl(243, 100%, 93%);
+
+
+    .left
+    {
+     
+        position: absolute;
+        background-color:  #fff;
+        color:  hsl(229, 57%, 11%);
+        font-weight: 700;
+        right: 40px;
+        top: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 13px 28px;
+        border-radius: 10px;
+       >div{
+        font-size: 27px;
+        font-weight: 700;
+        display: flex;
+        gap: 0;
+       }
+        > span:nth-child(2){
+            color:  hsl(229, 7%, 55%);
+            font-weight:700;
+            font-size: 9px;
+            text-transform: uppercase;
+            padding-top: 5px;
+        }
+    }
+
+    .left::after{
+        content: '';
+
+
+        
+        position: absolute;
+        top: 50px;
+        width: 0;
+        height: 0;
+        border-left: 30px solid transparent;
+        right: 0px;
+        border-top: 28px solid #fff;
+    }
+
+    p{
+      font-size: 14px;
+      font-weight: 400;
+        padding-bottom: 10px;
+
+        span{
+            font-weight: 700;
+            span{
+                padding-top: 2px;
+                margin-left: -1px;
+            }
+        }
+    }
+
+
+    meter{
+        width: 100%;
+
+        height: 32px;
+        color: aqua;
+        position: relative;
+        padding: 1px;
+        border-radius:  5px;
+    }
+    meter::-webkit-meter-bar{
+        background-color:hsl(229, 57%, 11%);
+        padding: 2px;
+       border-radius:  5px;
+    }
+    
+    meter::-webkit-meter-optimum-value{
+        border-radius: 5px;
+        background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    }
+
+    meter::-moz-meter-bar{
+        background-color:hsl(229, 57%, 11%);
+        padding: 2px;
+       border-radius:  5px;
+    }
+    
+    meter::-moz-meter-optimum-value{
+        border-radius: 5px;
+        background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    }
+    meter::after{
+    content: '';
+    position: absolute;
+    right: 25.5%;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-right: 2px;
+    }
+
+    span:nth-child(3){
+   font-weight: 700;
+    }
+    span:nth-child(5){
+        font-weight: 700;
+        position: absolute;
+        right: 40px;
+    }
+}
+
+
+@media (max-width:375px) {
+    
+body{
+    background:  url('../images/bg-mobile.png') left 0px bottom -12px;
+    background-color: hsl(229, 57%, 11%);
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main
+{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+    top: 0;
+    left: 0;
+   transform: translate(0%,0%);
+   margin: 120px auto;
+}
+.fylo{
+
+    padding: 30px 90px 30px 30px;
+
+    }
+
+
+
+    .storge{
+        width: 290px;
+        padding:30px 30px 40px ;
+
+    
+    
+        .left
+        {
+         
+            right: 80px;
+            bottom: -30px;
+           top: auto;
+            
+       
+        }
+    
+        .left::after{
+
+            top: 0px;
+           
+            border-top: 28px solid transparent;
+        }
+    
+        p{
+          font-size: 14px;
+          font-weight: 400;
+            padding-bottom: 10px;
+    
+           
+        }
+    
+    
+        
+    }
+
+
+
+
+
+}

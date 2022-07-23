@@ -11,8 +11,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 
 
-- Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/Testimonials%20grid%20section]
-- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/]
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
 
