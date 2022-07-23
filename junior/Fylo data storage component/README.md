@@ -10,7 +10,7 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
 
 
 - Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/Fylo%20data%20storage%20component]
-- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/Fylo data storage component/]
+- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/Fylo-data-storage-component/]
 
 
 
