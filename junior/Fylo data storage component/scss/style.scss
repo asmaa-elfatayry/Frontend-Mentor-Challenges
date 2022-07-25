@@ -124,47 +124,78 @@ main
     }
 
 
-    meter{
-        width: 100%;
-
-        height: 32px;
-        color: aqua;
+.outer-div{
+    width: 99%;
+        height: 15px;
         position: relative;
         padding: 1px;
-        border-radius:  5px;
-    }
-    meter::-webkit-meter-bar{
-        background-color:hsl(229, 57%, 11%);
-        padding: 2px;
-       border-radius:  5px;
-    }
-    
-    meter::-webkit-meter-optimum-value{
+        border-radius:  6px;
+    background-color: hsl(229, 57%, 11%);
+    margin: 5px auto;
+    padding: 1px 2px;
+
+    .inner-div{
         border-radius: 5px;
-        background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+            background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+            width: 75%;
+            height: 12px;
+            padding: 1px;
+           
     }
 
-    meter::-moz-meter-bar{
-        background-color:hsl(229, 57%, 11%);
-        padding: 2px;
-       border-radius:  5px;
-    }
-    
-    meter::-moz-meter-optimum-value{
-        border-radius: 5px;
-        background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
-    }
-    meter::after{
+}
+
+.inner-div::after{
     content: '';
     position: absolute;
-    right: 25.5%;
-    top: 12px;
-    width: 8px;
-    height: 8px;
+    right: 25%;
+    top: 2px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: aliceblue;
     margin-right: 2px;
     }
+
+    // meter{
+    //     width: 100%;
+    //     height: 32px;
+    //     position: relative;
+    //     padding: 1px;
+    //     border-radius:  5px;
+    // }
+    // meter::-webkit-meter-bar{
+    //     background-color:hsl(229, 57%, 11%);
+    //     padding: 2px;
+    //    border-radius:  5px;
+    // }
+    
+    // meter::-webkit-meter-optimum-value{
+    //     border-radius: 5px;
+    //     background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    // }
+
+    // meter::-moz-meter-bar{
+    //     background-color:hsl(229, 57%, 11%);
+    //     padding: 2px;
+    //    border-radius:  5px;
+    // }
+    
+    // meter::-moz-meter-optimum-value{
+    //     border-radius: 5px;
+    //     background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%))
+    // }
+    // meter::after{
+    // content: '';
+    // position: absolute;
+    // right: 25.5%;
+    // top: 12px;
+    // width: 8px;
+    // height: 8px;
+    // border-radius: 50%;
+    // background-color: aliceblue;
+    // margin-right: 2px;
+    // }
 
     span:nth-child(3){
    font-weight: 700;
