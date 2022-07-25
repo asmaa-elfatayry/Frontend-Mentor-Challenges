@@ -1,0 +1,610 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree',sans-serif;
+}
+
+@mixin heading {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+@mixin paragraph {
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+// start header
+header{
+    background-image: url('../images/bg-header-desktop.png');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    background-position: center;
+    padding-top: 50px;
+
+     .logo img{
+        width: 116px;
+     }
+    .info{
+        text-align: center;
+
+        h1{
+            margin-bottom: 30px;
+            @include heading;
+            font-size: 33px;
+        }
+        p{
+            padding:0px 350px 40px;
+            line-height: 1.4;
+           @include paragraph;
+            font-size: 16px;
+        }
+        .buttons{
+            display: flex;
+            gap: 15px;
+            }
+        button{
+            width: 200px;
+            border-radius: 20px;
+            padding: 14px 10px ;
+            border: none;
+            outline: none;
+            font-weight: 400;
+            color: #fff;
+        }
+        button:first-of-type{
+            background-color: hsl(171, 66%, 44%);
+        }
+        button:first-of-type:hover{
+            background-color: rgba(65, 220, 197, 0.727);
+            cursor: pointer;
+        }
+        button:last-of-type{
+            background-color: hsl(233, 100%, 69%);
+        }
+        button:last-of-type:hover{
+            background-color: hsla(233, 100%, 69%, 0.796);
+            cursor: pointer;
+        }
+
+    }
+}
+
+
+
+// end header
+// start main
+
+// text section
+.keep-track{
+    text-align: center;
+   margin: 30px auto;
+   h2{
+    padding: 0 0 15px;
+    font-size: 25px;
+    @include heading;
+   }
+
+   p{
+    padding:0px 250px 40px;
+    line-height: 1.4;
+    @include paragraph;
+    font-size: 13px;
+   }
+}
+
+// computer section
+.computer-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .pic{
+        width: 600px;
+      
+
+        img{
+            width: 100%;
+   left: -60px;
+    position: relative;
+        }
+    }
+
+    .computer-flex{
+        display: flex;
+        flex-direction: column;
+       padding-bottom: 30px;
+        align-items: flex-start;
+        gap: 40px;
+        text-align: left;
+
+        h3{
+            font-size: 22px;
+            @include heading;
+            margin-bottom: 15px;
+        }
+        p{
+            line-height: 1.6;
+            @include paragraph;
+            font-size: 13px;
+           width: 330px;
+        }
+    }
+}
+
+// access-section
+
+.access-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 100px auto 0px;
+
+ .text{
+    h2{
+        padding: 0 0 15px;
+        font-size: 25px;
+        @include heading;
+       }
+    
+       p{
+        padding:0px 200px 40px;
+        line-height: 1.6;
+        @include paragraph;
+        font-size: 13px;
+        
+       }
+ }
+    img{
+        width: 800px;
+        margin: 90px auto;
+    }
+}
+
+// supercharge 
+
+.supercharge{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin:0 auto 100px;
+
+
+    
+ .text{
+    h2{
+        padding: 0 0 15px;
+        font-size: 25px;
+        @include heading;
+       }
+    
+       p{
+        padding:0px 200px 40px;
+        line-height: 1.6;
+        @include paragraph;
+        font-size: 13px;
+        
+       }
+ }
+
+ .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        img{
+           width: 30px; 
+           padding: 30px 0;
+        }
+
+        h4{
+            padding: 0 0 15px;
+            font-size: 22px;
+            @include heading;
+           }
+        
+           p{
+           
+            line-height: 1.6;
+            @include paragraph;
+            font-size: 13px;
+            
+           }
+    }
+ }
+}
+
+// brands
+.brands{
+    width: 90%;
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+    img{
+        width: 120px;
+    }
+}
+
+// last section
+.info{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin:0 auto 100px;
+    
+    text-align: center;
+
+    h2{
+        padding: 0 0 15px;
+        @include heading;
+        font-size: 25px;
+    }
+    p{
+        line-height: 1.6;
+            @include paragraph;
+            font-size: 13px;
+            padding: 0 190px 40px;
+       
+   
+    }
+    .buttons{
+    display: flex;
+    gap: 15px;
+    }
+    button{
+        width: 200px;
+        border-radius: 20px;
+        padding: 14px 10px ;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        color: #fff;
+    }
+    button:first-of-type{
+        background-color: hsl(171, 66%, 44%);
+    }
+    button:first-of-type:hover{
+        background-color: rgba(65, 220, 197, 0.727);
+        cursor: pointer;
+    }
+    button:last-of-type{
+        background-color: hsl(233, 100%, 69%);
+    }
+    button:last-of-type:hover{
+        background-color: hsla(233, 100%, 69%, 0.796);
+        cursor: pointer;
+    }
+}
+
+// footer
+.container{
+    background-color: rgb(245, 246, 248);
+}
+footer{
+    display: flex;
+    gap: 5%;
+    width: 85%;
+    margin: auto;
+    padding: 25px 0;
+    align-items: center;
+    justify-content: center;
+  
+
+    .left{
+        width: 55%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        
+        justify-content: center;
+
+        img{
+            width: 40px;
+            padding-top: 18px;
+        }
+       img:hover{
+        color: hsl(170, 77%, 67%);
+       }
+        li{
+            list-style: none;
+        color: hsl(213, 4%, 43%);
+        padding: 10px 0;
+        font-size: 14px;
+        }
+     li:hover{
+        cursor: pointer;
+        color: #26bba4;
+     }
+    }
+    .right{
+        width: 40%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+
+
+
+
+@media (max-width:375px) {
+    
+
+// start header
+header{
+    background-image: url('../images/bg-header-mobile.png');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    gap:70px;
+    background-position: center;
+    padding-top: 100px;
+
+     .logo img{
+        width: 90px;
+     }
+    .info{
+      
+
+        h1{
+        
+            font-size: 30px;
+        }
+        p{
+            padding:0px 8px 40px;
+            line-height: 1.4;
+        }
+        .buttons{
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+           justify-content: center;
+           align-items: center;
+            }
+        button{
+            width: 100%;
+        
+        }
+       
+
+    }
+}
+
+
+
+// end header
+// start main
+
+// text section
+.keep-track{
+
+   h2{
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+   p{
+    padding:0px 40px 40px;
+    line-height: 1.5;
+   }
+}
+
+// computer section
+.computer-section{
+    grid-template-columns: 1fr ;
+    gap: 20px;
+   justify-content: center;
+   align-items: center;
+
+    .pic{
+        width: 300px;
+        margin: auto;
+
+        img{
+            width: 100%;
+            margin: auto;
+          left: auto;
+
+        }
+    }
+
+    .computer-flex{
+        display: flex;
+        flex-direction: column;
+       padding-bottom: 30px;
+        align-items: center;
+        gap: 40px;
+        text-align: center;
+        padding-top: 40px;
+
+
+        p{
+            line-height: 1.6;
+           padding: 0 60px;
+           width: auto;
+        }
+    }
+}
+
+// access-section
+
+.access-section{
+   
+    width: 95%;
+    margin: 100px auto 0px;
+
+ .text{
+    h2{
+        font-size: 23px;
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+    
+       p{
+        padding:0px 40px 0px;
+        
+       }
+ }
+    img{
+        width: 300px;
+        margin: 50px auto 80px;
+    }
+}
+
+// supercharge 
+
+.supercharge{
+    width: 95%;
+    margin:0 auto 100px;
+
+
+    
+ .text{
+    h2{
+        font-size: 23px;
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+    
+       p{
+        padding:0px 40px 40px;
+    
+       }
+ }
+
+ .boxes{
+    grid-template-columns: 1fr ;
+
+
+    div{
+
+        h4{
+            font-size: 20px;
+           }
+        
+           p{
+           
+          padding: 0 40px ;
+           }
+    }
+ }
+}
+
+// brands
+.brands{
+    width: 95%;
+    margin: 0 auto 70px;
+    flex-direction: column;
+    gap: 50px;
+
+    img{
+        width: 120px;
+    }
+}
+
+// last section
+.info{
+
+    width: 95%;
+   
+
+    h2{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 23px;
+    }
+    p{
+            padding: 0 40px 40px;
+    }
+    .buttons{
+    flex-direction: column;
+    width: 90%;
+
+    }
+    button{
+        width: 100%;
+    
+    }
+    
+}
+
+// footer
+.container{
+    background-color: rgb(245, 246, 248);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+
+  
+
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+      text-align: center;
+        align-items: center;
+        justify-content: center;
+       gap: 10px;
+     
+       
+   
+    }
+    li{
+
+    padding: 0px 0;
+
+    }
+    .right{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+}
+
