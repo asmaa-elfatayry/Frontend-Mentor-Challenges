@@ -5,8 +5,8 @@
 ## Welcome! 👋
 
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/chat-app-css-illustration-master
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/chat-app-css-illustration-master/
 
 
 
