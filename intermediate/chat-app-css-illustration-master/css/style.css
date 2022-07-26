@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: Arial, Helvetica, sans-serif;
+  position:relative;
+  font-size: 16px;
+  font-family: 'Rubik',sans-serif;
+
+}
+body::before{
+    content: "";
+   background: linear-gradient(to bottom left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    position: absolute;
+    top: 0px;
+    left: -40px;
+    width: 400px;
+    height: 90%;
+    border-radius: 0 0 228px 228px;
+}
+body::after{
+    content: "";
+        background-color: hsl(270, 20%, 96%);
+    position: absolute;
+    bottom: 0px;
+    right: -40px;
+    width: 400px;
+    height: 90%;
+    border-radius: 228px 228px 0% 0%;
+    z-index: 1;
+}
+
+#container{
+    overflow: hidden;
+display: grid;
+grid-template-columns:1fr 1fr ;
+width: 100%;
+margin: auto auto;
+justify-content: center;
+align-items: center;
+gap: 100px;
+}
+
+/* wrapper of mobile */
+
+#mobile-section> div{
+    color: #fff;
+    width: 300px;
+    background-color:  hsl(270, 20%, 96%);
+    border-radius: 40px;
+    position: relative;
+    border: 10px solid #fff;
+    overflow: hidden;
+    padding-bottom: 15px;
+    left: 45%;
+    margin: 80px 0 0;
+  margin-right:0;
+    
+}
+
+/* label contain pic and name */
+#mobile-section div .head-chat{
+    background: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    position: relative;
+    padding: 40px 20px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+}
+#mobile-section div .head-chat::before{
+    content: "";
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    top: -2px;
+    left: 50px;
+    background-color: #fff;
+    border-radius: 80px 80px 190px 190px;
+}
+.head-chat img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: 24px;
+}
+#mobile-section div img:hover,
+.head-chat i:first-of-type:hover,
+.head-chat i:last-of-type:hover{
+    cursor: pointer;
+}
+.head-chat h3{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+.head-chat span{
+    font-size: 12px;
+    display: block;
+    color: hsla(276, 100%, 81%, 0.682);
+    font-weight: 400;
+}
+.head-chat i{
+    font-size: 25px;
+}
+/* absluote from parent =>label */
+.head-chat i:first-of-type{
+    position: absolute;
+    bottom: 17px;
+}
+.head-chat i:last-of-type{
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    
+}
+
+/* end header of mobile */
+/* start body and message section */
+#mobile-section .chat{
+    display: flex;
+    flex-direction: column;
+}
+.chat p{
+    background-color: #EDE4F5;
+    color: hsl(276, 55%, 52%);
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    width: 65%;
+    font-size: 12px;
+    font-weight: 400;
+}
+.chat>div{
+    align-self: flex-end;
+    margin: 10px 10px 0;
+}
+.chat img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 5px  ;
+    margin-left: 0px;
+}
+.chat p:nth-of-type(3),
+.chat p:nth-of-type(4){
+    background-color: #fff;
+    align-self: flex-end;
+    color: hsl(271, 15%, 43%);
+    padding-right: 5px;
+ 
+}
+.chat p:nth-of-type(4){
+    width: fit-content;
+}
+.chat p:nth-of-type(6),
+.chat p:nth-of-type(7){
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    width: 75%;
+    font-weight: 400;
+    position: relative;
+    color: rgba(255, 255, 255, 0.575);
+    padding: 15px 10px 15px 30px;
+    position: relative;
+}
+.chat p:nth-of-type(6)::before ,
+.chat p:nth-of-type(7)::before{
+content: '';
+border-radius: 50%;
+border: 1px solid hsla(0, 0%, 100%, 0.493);
+width: 10px;
+height: 10px;
+background-color:  hsl(289, 100%, 72%);
+position: absolute;
+left: 10px;
+
+}
+.chat p span{
+    position: absolute;
+    right: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+
+}
+.chat input{
+    width: 92%;
+  margin: 0 12px;
+  border-radius: 20px;
+  padding:  15px ;
+  outline: none;
+  border: none;
+  font-size: 12px;
+ opacity: .6;
+ margin-top: 15px;
+ position: relative;
+ color: hsl(206, 6%, 79%);
+ background-color: #fff;
+}
+.chat :nth-child(10){
+    background-color: hsl(271, 36%, 24%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+}
+.chat :nth-child(10):hover{
+    cursor: pointer;
+}
+.chat span i{
+   position: absolute;
+   right: 9px;
+   bottom: 2px;
+    font-size: 28px;
+    color: #FFF;
+    text-align: center;
+}
+/* end mobile section */
+
+
+/* start text section */
+.article{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  
+}
+.article h1{
+    align-self: flex-start;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+.article p{
+    color: hsl(270, 7%, 64%);
+    padding-right: 15%;
+    font-size: 16px;
+    line-height: 1.9rem;
+  
+}
+
+
+
+/* start responsive */
+@media (max-width:375px){
+
+    body::before{
+        top: 0px;
+        left: -80px;
+        width: 300px;
+        height: 50%;
+    
+    }
+    body::after{
+
+        bottom: 0px;
+        right: -40px;
+        width: 200px;
+        height: 45%;
+        z-index: -1;
+
+    }
+    #container{
+    
+    grid-template-columns:1fr  ;
+    width: 100%;
+    margin: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    }
+
+    
+#mobile-section> div{
+
+    left: 10%;
+
+    
+}
+.article{
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 50px;
+}
+.article h1{
+    align-self: center;
+    font-size: 32px;
+}
+.article p{
+    color: hsl(270, 7%, 64%);
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 1.9rem;
+  
+}
+
+
+    
+}
