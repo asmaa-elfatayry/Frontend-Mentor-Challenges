@@ -8,7 +8,7 @@ Thanks for checking out this front-end coding challenge.
 
 
 - Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/interactive-rating-component-main
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/interactive-rating-component-main/
 
 
 
