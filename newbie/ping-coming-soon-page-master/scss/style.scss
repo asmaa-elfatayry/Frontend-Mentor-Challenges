@@ -1,0 +1,198 @@
+
+
+$primary-Blue: hsl(223, 87%, 63%);
+
+// ### Secondary
+
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+
+// ### Neutral
+
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 100px auto;
+    text-align: center;
+    width: 600px;
+  
+
+
+    h1{
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+        font-size: 27px;
+        margin-bottom: 50px;
+
+        span{
+            color: $primary-Blue;
+        }
+    }
+
+    h2{
+      font-weight: 300;
+      color: $Gray;
+      font-size: 38px;
+      margin-bottom: 15px;
+      span{
+        font-weight: 700;
+        color: $Very-Dark-Blue;
+      }
+    }
+    p{
+        color: $Very-Dark-Blue;
+        font-size: 20px;
+    }
+
+    form{
+        margin: 30px auto 60px;
+        display: flex;
+        gap: 10px;
+        padding: 0 30px;
+        position: relative;
+
+        input{
+            width: 70%;
+            color: $Very-Dark-Blue;
+            border: 1px solid $Pale-Blue;
+            border-radius: 25px;
+            padding: 15px 25px;
+            outline: none;
+        }
+        input::placeholder{
+            color: $Pale-Blue;
+            opacity: .8;
+        }
+
+        button{
+            width: 30%;
+            border-radius: 25px;
+            background-color: $primary-Blue;
+            color: #fff;
+            border: none;
+            outline: none;
+            box-shadow: 1px 4px 8px $Pale-Blue;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: lighten($color:$primary-Blue, $amount: 5);
+        }
+        .warn-validation{
+            position: absolute;
+            bottom: -25px;
+            left: 60px;
+            color: $Light-Red;
+            font-size: 13px;
+            display: none;
+        }
+        input.warn{
+            border: 1px solid $Light-Red;
+        }
+    }
+
+    .pic{
+        width:100%;
+    }
+    .pic img{
+        width: 100%;
+    }
+
+
+    .icons{
+     margin: 30px auto ;
+
+     ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+
+        li{
+            list-style: none;
+            border: 1px solid $Pale-Blue;
+            border-radius: 50%;
+            padding: 6px 10px;
+
+        }
+        li:hover{
+            background-color: $primary-Blue;
+            cursor: pointer;
+           
+        }
+
+        i{
+            color: $primary-Blue;
+        }
+        li:hover i{
+           color: #fff;
+           
+        }
+
+
+     }
+    }
+
+
+    h3{
+        font-size: 12px;
+        color: $Gray;
+        font-weight: 300;
+    }
+}
+
+
+@media (max-width:375px) {
+    main{
+        margin: 100px auto;
+        text-align: center;
+        width: 300px;
+
+        h2{
+            font-size: 27px;
+        }
+        form{
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+
+            input{
+                width: 100%;
+
+            }
+            button{
+                width: 100%;
+                padding: 15px 25px;
+            }
+            .warn-validation{
+                bottom: 65px;
+                left: 50%;
+                transform: translateX(-50%);
+                width:100%
+                
+                
+            }
+        }
+
+        .icons{
+            margin: 60px auto 30px ;
+
+           ul{
+            gap: 20px;
+           }
+        
+        }
+    }    
+}
