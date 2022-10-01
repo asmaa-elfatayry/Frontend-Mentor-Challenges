@@ -5,8 +5,8 @@
 ## Welcome! 👋
 
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/
+- Solution URL:https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/ping-coming-soon-page-master
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/ping-coming-soon-page-master/
 
 
 
