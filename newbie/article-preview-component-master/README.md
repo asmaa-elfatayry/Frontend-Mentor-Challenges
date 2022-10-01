@@ -4,8 +4,8 @@
 
 ## Welcome! 👋
 
-- Solution URL:https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/Article-preview-component
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Article-preview-component/
+- Solution URL:https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/article-preview-component-master
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/article-preview-component-master/
 
 
 
