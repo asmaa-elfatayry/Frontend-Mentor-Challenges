@@ -6,4 +6,4 @@
 
 this is fifth challenge in front endmentor
 
-live repo https://asmaa-elfatayry.github.io/Stats-preview-card-component-5-frontend-mentor/
+live repo https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Stats-preview-card-component--5/
