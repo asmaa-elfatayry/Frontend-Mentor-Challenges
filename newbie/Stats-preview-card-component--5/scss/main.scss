@@ -1,0 +1,146 @@
+@import 'config';
+
+body{
+    background-color: $main-background
+}
+
+main{
+    @include center;
+    margin-top: 180px;
+
+    @include media(mobile){
+        margin: 85px auto;
+    }
+}
+
+.card{
+    background-color: $card-background;
+    width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 7px;
+   
+
+    .text-section{
+        padding: 80px 75px 65px;
+        border-radius: 7px 0px 0px 7px;
+
+
+        h1{
+            color: $primary-color;
+            font-family: Inter,sans-serif;
+            font-weight: 700;
+
+            span{
+                color: $secondary-color;
+            }
+       
+        }
+        p{
+            padding: 30px 0 80px;
+            color: $main-pargraph;
+            font-family: inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5rem;
+            letter-spacing: .04rem;
+        }
+        .media{
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            h2{
+                color: $primary-color;
+                font-family: inter;
+                font-size: 23px;
+            }
+
+
+           & p{
+            padding: 0;
+            font-family: 'Lexend Deca';
+            font-size: 11px;
+            color: $state-heading;
+            }
+        }
+
+    }
+
+
+    .image-section{
+        background: url('../images/image-header-desktop.jpg');
+        background-size: cover;
+        position: relative;
+        border-radius: 0px 7px 7px 0px;
+ 
+        
+    }
+
+    .image-section::after{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color:   hsla(277, 100%, 36%,0.5);
+        border-radius: 0px 7px 7px 0px;
+    }
+
+
+        @include media(mobile){
+        
+            width: 330px;         
+            grid-template-columns: 1fr;
+            
+           
+        
+            .text-section{
+                order: 2;
+                padding: 25px 20px 0px;
+                text-align: center;
+                border-radius: 0px 0px 7px 7px;
+
+                h1{
+                    font-size: 28px;
+                }
+        
+        
+     
+                p{
+                    padding: 25px 0 50px;
+                }
+                .media{
+                    flex-direction: column;
+                 
+                    & div{
+                        padding-bottom: 35px;
+                    }
+        
+        
+                   & p{
+                    padding: 0;
+                    }
+                }
+        
+            }
+        
+        
+            .image-section{
+                order: 1;
+                background: url('../images/image-header-mobile.jpg');
+                height: 240px;
+                width: 100%;
+                border-radius: 7px 7px 0px 0px;
+         
+                
+            }
+        
+            .image-section::after{
+                border-radius: 7px 7px 0px 0px;
+            }
+        }
+    
+}
+

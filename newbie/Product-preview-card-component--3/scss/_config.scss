@@ -1,0 +1,24 @@
+$background-color:hsl(30, 38%, 92%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $background-color;
+    
+}
+
+@mixin media($par) {
+    @if $par == mobile{
+        @media (max-width:375px )  {
+            @content
+        }
+    }@else if $par == desktop{
+        @media (min-width:376px) and (max-width:1440px ) {
+            @content
+        }
+    }
+}

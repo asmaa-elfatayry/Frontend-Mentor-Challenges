@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$colors: (
+    cyan: hsl(179, 62%, 43%),
+    bright-yellow: hsl(71, 73%, 54%),
+    light-gray: hsl(204, 43%, 93%),
+    grayesh-blue: hsl(218, 22%, 67%),
+    dark-cyan:rgb(43,179,177),
+    light-cyan:rgb(74,190,189)
+   
+);
+$fonts: (
+light:400,
+bold: 700
+);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}

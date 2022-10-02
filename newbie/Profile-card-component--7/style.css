@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background:url(images/bg-pattern-top.svg) left -51vh bottom -26vh ,
+ url(images/bg-pattern-bottom.svg) left 40vh top 53vh;
+ background-color: hsl(185, 75%, 39%);
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+width: 350px;
+background-color:  #fff;
+border-radius: 12px;
+position: relative;
+text-align: center;
+}
+
+.card .top-section img{
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.card   .img{
+    position: absolute;
+    left: 125px;
+    top: 140px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.card .body{
+    font-family: 'Kumbh Sans';
+    font-weight: 700;
+}
+.card .body h1{
+    margin-top: 65px;
+    font-size: 18px;
+    display: inline-block;
+    color:  hsl(229, 23%, 23%);
+}
+.card .body span{
+    padding-left: 7px;
+    color:  hsl(227, 10%, 46%);
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+}
+.card .body p{
+    color:  hsl(227, 10%, 46%);
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    margin: 15px auto 30px;
+}
+.card .body  hr{
+    height: 1px;
+    color: hsl(227, 10%, 46%);
+}
+.card .body .state{
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 28px 0;
+    justify-content: center;
+}
+
+
+.card .body .state h2{
+    font-size: 18px;
+    color:  hsl(229, 23%, 23%);
+}
+
+.card .body .state p{
+    margin: 0;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 5px;
+    color: hsl(0, 0%, 59%);;
+}
+
+@media (max-width: 375px){
+    body {
+        background: url(images/bg-pattern-top.svg) left -55vh bottom 52vh ,
+         url(images/bg-pattern-bottom.svg) left 25vh top 53vh;
+         background-color: hsl(185, 75%, 39%);
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+    main{
+        min-height: auto;
+        margin: 150px auto;
+    
+    }
+    .card{
+        width: 325px;
+
+        }
+        .card   .img{
+            left: 102px;
+            top: 129px;
+        }
+
+        .card .body h1{
+            margin-top: 60px;
+        }
+        .card .body p{
+            margin: 10px auto 20px;
+        }
+        .card .body .state{
+            padding: 24px 0;
+        }
+        
+}

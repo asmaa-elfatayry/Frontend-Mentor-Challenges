@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color:  #fff;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 85px auto;
+    flex-direction: column;
+
+.content{
+    width:500px ;
+    margin: auto;
+    text-align: center;
+
+    .title{
+        display: block;
+        font-size: 2em;
+        font-weight: 200;
+        color: hsl(234, 12%, 34%);
+       
+    }
+    h1{
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+    }
+    p{
+        
+        color:  hsl(229, 6%, 66%);
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 25px;
+        line-height: 1.6;
+        
+    }
+} // content end
+
+.cards{
+    margin-top: 65px;
+display: grid;
+grid-template-areas: ' . b .'
+                      's b c'
+                      's k c'
+                      '. k .'
+                     ;
+                     gap: 30px;
+
+
+    div{
+        width: 350px;
+        padding: 30px;
+        border-radius: 7px;
+       -moz-box-shadow:0 6px 18px 0 #bbbbcca8;
+       -webkit-box-shadow:0 6px 18px 0 #bbbbcca8;
+        box-shadow: 0 6px 18px 0 #bbbbcca8;
+
+        h2{
+            color: hsl(234, 12%, 34%);
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        p{
+            color:  hsl(229, 6%, 66%);
+            font-weight: 400;
+            font-size: 15px;
+            margin: 20px auto 40px;
+            line-height: 1.6;
+        }
+        img{
+            float: right;
+        }
+    }
+
+    .supervisor{
+    grid-area: s;
+    border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    .builder{
+    grid-area: b;
+    border-top: 5px solid hsl(0, 78%, 62%);
+    }
+    .karma{
+    grid-area: k;
+    border-top: 5px solid hsl(34, 97%, 64%);
+    }
+    .calculator{
+    grid-area: c;
+    border-top: 5px solid  hsl(212, 86%, 64%);
+    }
+}
+}
+// responsive mobile
+@media (max-width:375px) {
+    main{
+        margin: 85px auto;
+    
+    .content{
+        width:300px ;
+    
+        .title{
+            display: block;
+            font-size: 1.4em;
+
+           
+        }
+        h1{
+            font-size: 1.4em;
+        }
+        p{
+            
+            margin-top: 25px;
+
+            
+        }
+    } // content end
+    
+    .cards{
+        margin-top: 65px;
+    display: grid;
+    grid-template-areas: ' s'
+                          ' b '
+                          ' k '
+                          'c'
+                         ;
+                         gap: 20px;
+    
+    
+        div{
+            width: 310px;
+            padding:30px;
+
+            
+      
+        p{
+
+            font-size: 13px;
+            margin: 5px auto 35px;
+            line-height: 1.6;
+        }
+ 
+        }
+    
+        
+    }
+    }
+}

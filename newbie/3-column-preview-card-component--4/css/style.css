@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    color:#fff;
+    font-family: 'Lexend Deca',sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-size: 37px;
+    margin:40px 0;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+p {
+  line-height: 1.6rem;
+   font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.container div{
+   width: 300px;
+    padding: 50px ;
+}
+
+.one{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0px 0px 7px;
+ 
+}
+.two{
+    background-color: hsl(184, 100%, 22%);
+    
+}
+.three{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 7px 7px 0px;
+ 
+}
+
+
+.container div button{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    border-radius:50px ;
+    border: none;
+    margin: 85px 0 0 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: border .2s linear;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+.one button{
+    color:hsl(31, 77%, 52%) ;
+}
+.one button:hover{
+    background-color:  hsl(31, 77%, 52%) ;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.two button{
+    color: hsl(184, 100%, 22%);
+}
+.two button:hover{
+    background-color:  hsl(184, 100%, 22%) ;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+.three button{
+    color:hsl(179, 100%, 13%) ;
+}
+.three button:hover{
+    background-color:hsl(179, 100%, 13%) ;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* mobaile responsive */
+
+@media (max-width:375px)
+{
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin:90px auto;
+    
+    }
+  
+    .container div{
+        width: 330px;
+     }
+     .container div button{
+        margin: 30px 0 0 0;
+     }
+     
+     .one{
+        border-radius: 7px 7px 0px 0px;   }
+    .three{
+        border-radius: 0px 0px 7px 7px;
+     }
+    
+}

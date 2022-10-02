@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background: url('../images/pattern-background-desktop.png');
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%)
+
+}
+ main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .card{
+        width: 450px;
+        text-align: center;
+        background-color:#fff ;
+        border-radius: 15px;
+
+        img{
+            border-radius: 15px 15px 0 0;
+        }
+
+        h1{
+        padding: 50px 0px 30px;
+        font-family: 'Red Hat Display' ,sans-serif;
+        color:   hsl(223, 47%, 23%);
+        font-weight: 900;
+
+        }
+
+        p{
+            padding: 0 80px;
+            font-family: 'Red Hat Display' ,sans-serif;
+            color:  hsl(224, 23%, 55%);
+            font-weight: 400;
+            line-height: 1.5rem;
+        }
+
+        .box{
+            margin: 30px 50px;
+            padding:  20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            background-color:   hsl(225, 100%, 98%);
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 15px;
+
+            .sound{
+                
+
+                h4{
+                    color: hsl(223, 47%, 23%);
+                    font-family: 'Red Hat Display' ,sans-serif;
+                    font-weight: 700;
+                }
+            }
+            .text{
+                p,h4{
+                text-align: left;
+                padding: 0;
+                }
+                p{
+                    font-family: 'Red Hat Display' ,sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+            .change a{
+                text-align: right;
+                color:  hsl(245, 75%, 52%);
+                font-family: 'Red Hat Display' ,sans-serif;
+                font-weight: 700;
+                margin: 0;
+                margin-left: 30px;
+                text-decoration: underline;
+            }
+            .change a:hover{
+                color: rgb(118, 108,241);
+                text-decoration: none;
+            }
+        }
+    
+    button{
+        width: 350px;
+        margin: auto;
+        background-color: hsl(245, 75%, 52%);
+        color: #fff;
+        padding: 15px 0;
+        border-radius: 15px;
+        font-family: 'Red Hat Display' ,sans-serif;
+        font-weight: 700;
+        border: none;
+        -webkit-box-shadow: 0 8px 11px -2px #9fb1e2;
+        -moz-box-shadow: 0 8px 11px -2px #9fb1e2;
+        box-shadow: 0 8px 11px -2px #9fb1e2;
+    }
+    
+    }
+    button:hover{
+        background-color:  rgb(118, 108,241);
+        cursor: pointer;
+    }
+    .cancel{
+        display: block;
+        margin: 20px auto;
+        padding-bottom: 20px;
+        color:hsl(224, 23%, 55%) ;
+        font-family: 'Red Hat Display' ,sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .cancel:hover{
+        color: hsl(223, 47%, 23%);
+    }
+
+    }//card
+    
+ 
+ 
+@media (max-width:375px) {
+    
+body{
+    background: url('../images/pattern-background-mobile.png');
+    background-repeat: no-repeat;
+    background-color:  hsl(225, 100%, 94%)
+}
+ main{
+
+    min-height: auto;
+    margin: 75px auto;
+
+    .card{
+        width: 330px;
+        border-radius: 15px;
+
+        img{
+            border-radius: 15px 15px 0 0;
+            width: 100%;
+
+        }
+
+        h1{
+        padding: 40px 0px 30px;
+       font-size: 30px;
+
+        }
+
+        p{
+            padding: 0 30px;
+            font-size: 16px;
+        }
+
+        .box{
+            margin: 25px ;
+            padding:  20px;
+            
+
+            .sound{
+                
+
+                h4{
+                    color: hsl(223, 47%, 23%);
+                    font-family: 'Red Hat Display' ,sans-serif;
+                    font-weight: 700;
+                }
+            }
+            .text{
+                p,h4{
+                text-align: left;
+                padding: 0;
+                }
+                p{
+                    font-family: 'Red Hat Display' ,sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+           
+           
+        }
+    
+    button{
+        width: 275px;
+      
+    }
+ 
+ 
+   
+
+    }//card
+    
+ }
+}
