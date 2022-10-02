@@ -5,4 +5,4 @@
 ## Welcome! 👋
 this is the Sixth challenge in frontend mentor
 
-live repo  https://asmaa-elfatayry.github.io/Order-summary-component-6-frontend-mentor/
+live repo  https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Order-summary-component--6/

@@ -6,5 +6,4 @@
 
 - this is the 11th challenge in frontend mentor using HTML & SCSS
 
-- live repo https://asmaa-elfatayry.github.io/Huddle-landing-page-11th-frontend-mentor/
-Source
+- live repo https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Huddle-landing-page-11/

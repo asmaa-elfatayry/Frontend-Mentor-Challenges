@@ -5,4 +5,5 @@
 ## Welcome! 👋
 this is the second challenge in frontend mentor using HTML & CSS
 
-live repo https://asmaa-elfatayry.github.io/NFT-preview-card-component-2-frontend-mentor/
+live repo  https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/NFT-preview-card-component--2/
+

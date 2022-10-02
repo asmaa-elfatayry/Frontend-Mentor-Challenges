@@ -6,4 +6,4 @@
 
 this is the 10th challenge in frontend mentor
 
-- live repo   https://asmaa-elfatayry.github.io/Social-proof-section-10th-frontend-mentor/
+- live repo   https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Social-proof-section--10/

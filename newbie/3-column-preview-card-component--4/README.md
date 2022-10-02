@@ -6,4 +6,4 @@
 
 This is the fourth challenge in frontend mentor 
 
-live repo  https://asmaa-elfatayry.github.io/3-column-preview-card-component-4/
+live repo  https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/3-column-preview-card-component--4/
