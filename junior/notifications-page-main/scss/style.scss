@@ -1,0 +1,263 @@
+$Red: hsl(1, 90%, 64%);
+$Blue: hsl(219, 85%, 26%);
+
+$White: hsl(0, 0%, 100%);
+$Very-light-grayish-blue: hsl(210, 60%, 98%);
+$Light-grayish-blue-1: hsl(211, 68%, 94%);
+$Light-grayish-blue-2: hsl(205, 33%, 90%);
+$Grayish-blue: hsl(219, 14%, 63%);
+$Dark-grayish-blue: hsl(219, 12%, 42%);
+$Very-dark-blue: hsl(224, 21%, 14%);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $Very-light-grayish-blue;
+    font-family: "Plus Jakarta Sans";
+}
+main {
+    max-width: 730px;
+    margin: 70px auto;
+}
+.container {
+    background-color: $White;
+    padding: 25px;
+    border-radius: 25px;
+
+    .navbar {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 26px;
+            font-weight: 800;
+            color: $Very-dark-blue;
+            span {
+                background-color: $Blue;
+                color: $White;
+                font-size: 18px;
+                margin-left: 10px;
+                padding: 1px 12px;
+                border-radius: 5px;
+            }
+        }
+        p {
+            font-size: 16px;
+            color: $Grayish-blue;
+            font-weight: 500;
+        }
+        p:hover {
+            cursor: pointer;
+            color: $Blue;
+        }
+    }
+    // end navbar
+
+    .all-notifications {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+
+        .notf-box:nth-of-type(1),
+        .notf-box:nth-of-type(2),
+        .notf-box:nth-of-type(3) {
+            background-color: $Very-light-grayish-blue;
+        }
+        .notf-box {
+            display: flex;
+            position: relative;
+            gap: 7px;
+            padding: 15px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+
+                margin-right: 15px;
+            }
+
+            .name-date {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: $Very-dark-blue;
+                    font-weight: 800;
+                    font-size: 16px;
+                }
+                h3:hover {
+                    cursor: pointer;
+                    color: $Blue;
+                }
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $Grayish-blue;
+                    margin-top: 4px;
+                }
+                .msg {
+                    margin-top: 20px;
+                }
+            }
+
+            p {
+                color: $Dark-grayish-blue;
+                font-weight: 400;
+                font-size: 16px;
+                .circle {
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                    background-color: $Red;
+                    display: inline-block;
+                }
+                strong {
+                    padding-left: 3px;
+                    font-size: 15px;
+                }
+                strong:hover {
+                    color: $Blue;
+                    cursor: pointer;
+                }
+                .chess {
+                    cursor: pointer;
+                    color: $Blue;
+                    font-weight: 800;
+                }
+            }
+        } //end notf box
+
+        .chess-img {
+            position: absolute;
+            right: 15px;
+            border-radius: 0 !important;
+            top: 15px;
+            cursor: pointer;
+        }
+        .handel-msg {
+            .notf-box {
+                background-color: $White !important;
+            }
+            p:nth-child(2) {
+                border-radius: 3px;
+                font-size: 16px;
+                border: 1px solid $Light-grayish-blue-2;
+                padding: 15px 20px;
+                margin: 5px 30px 15px 80px;
+                color: $Dark-grayish-blue;
+                font-weight: 400;
+            }
+            p:nth-child(2):hover {
+                background-color: $Light-grayish-blue-1;
+                cursor: pointer;
+            }
+        }
+    }
+    #abnormal .name-date {
+        h3 {
+            span {
+                color: $Dark-grayish-blue;
+                font-weight: 400;
+                font-size: 16px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        max-width: 330px;
+        margin: 10px auto;
+    }
+    .container {
+        padding: 15px;
+
+        .navbar {
+            h1 {
+                font-size: 19px;
+
+                span {
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+        // end navbar
+
+        .all-notifications {
+            .notf-box {
+                display: flex;
+                position: relative;
+                gap: 7px;
+                padding: 15px;
+
+                img {
+                    margin-right: 10px;
+                }
+
+                .name-date {
+                    h3 {
+                        font-size: 12px;
+                    }
+
+                    span {
+                        font-size: 12px;
+
+                        margin-top: 4px;
+                    }
+                    .msg {
+                        margin-top: 12px;
+                    }
+                }
+
+                p {
+                    color: $Dark-grayish-blue;
+                    font-weight: 400;
+                    font-size: 12px;
+
+                    strong {
+                        padding-left: 3px;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+
+        .handel-msg {
+            .notf-box {
+                background-color: $White !important;
+            }
+            p:nth-child(2) {
+                font-size: 12px !important;
+                padding: 10px 15px !important;
+                margin: 5px 10px 15px 70px !important;
+            }
+        }
+
+        #abnormal .name-date {
+            h3 {
+                span {
+                    color: $Dark-grayish-blue;
+                    font-weight: 400;
+                    font-size: 12px;
+                    padding-left: 5px;
+                }
+            }
+        }
+        .chess-img {
+            top: 34px !important;
+        }
+    }
+}
