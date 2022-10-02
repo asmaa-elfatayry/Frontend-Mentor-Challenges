@@ -8,4 +8,4 @@ this is third challenge in frontend mentor
 
 using HTML & SCSS
 
-live repo https://asmaa-elfatayry.github.io/Product-preview-card-component-3-frontend-mentor/
+live repo https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Product-preview-card-component--3/
