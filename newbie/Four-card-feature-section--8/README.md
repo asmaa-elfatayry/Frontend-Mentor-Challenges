@@ -6,4 +6,4 @@
 
 that is the 8th challenge in frontend mentor
 
-live repo https://asmaa-elfatayry.github.io/Four-card-feature-section-8th-frontend-mentor/
+live repo https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/Four-card-feature-section--8/
