@@ -4,4 +4,5 @@
 
 first challenge in frontend mentor
 
-live repo https://asmaa-elfatayry.github.io/QR-code-component-Frontend-Mentor/
+live repo  https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/QR-code-component--1/
+
