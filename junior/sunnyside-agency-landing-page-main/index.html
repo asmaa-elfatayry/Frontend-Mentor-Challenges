@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- start header -->
+  <header>
+
+    <nav>
+      <ul>
+        <li><a href="#"><img src="./images/logo.svg" alt="logo"></a></li>
+      </ul>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#"> Projects</a></li>
+        <li> <button> Contact</button></li>
+
+      </ul>
+
+      <div class="toggle-icon">
+        <ion-icon name="menu-outline" onclick="display_nav()"></ion-icon>
+
+        <div class="toggle-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#"> Projects</a></li>
+            <li> <button> Contact</button></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+
+    <h1> We are creatives</h1>
+    <img src="./images/icon-arrow-down.svg" alt="arrow">
+  </header>
+  <main>
+    <!-- your brand each have to section image and text -->
+    <div class="your-brands">
+
+      <div class="barnd-info-image">
+        <div class="info-brand">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <h3><a href="#"> Learn more</a></h3>
+        </div>
+        <!--info brand-->
+
+        <div class="image-brand">
+          <img src="./images/desktop/image-transform.jpg" alt="egg">
+        </div>
+        <!--image brand-->
+
+      </div><!-- brand info image-->
+
+      <div class="barnd-info-image">
+
+        <div class="image-brand">
+          <img src="./images/desktop/image-stand-out.jpg" alt="stand">
+        </div>
+        <!--image brand-->
+
+        <div class="info-brand">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll build and extend your brand in digital places.</p>
+          <h3><a href="#"> Learn more</a></h3>
+        </div>
+        <!--info brand-->
+      </div><!-- brand info image-->
+
+
+    </div>
+    <!--your brands-->
+    <!-- two images -->
+    <div class="two-info-image ">
+
+      <div class="bg-image-brand">
+
+        <div class="text">
+          <h2> Graphic design</h2>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential
+            clients’ attention.</p>
+        </div>
+        <!--text-->
+      </div>
+      <!--image brand-->
+
+      <div class="bg-image-brand">
+
+        <div class="text">
+          <h2> Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.</p>
+        </div>
+        <!--text-->
+      </div>
+      <!--info brand-->
+
+    </div><!-- brand info image-->
+
+    <!-- start Client testimonials -->
+    <div class="testimonials">
+      <h3> Client testimonials</h3>
+      <div class="tes-content">
+        <div class="clint">
+          <img src="./images/image-emily.jpg" alt="clint">
+          <p> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always
+            hit.</p>
+          <div class="name-job">
+            <h4>Emily R.</h4>
+            <span>Marketing Director</span>
+
+          </div>
+          <!--name job-->
+        </div> <!-- clint-->
+
+        <div class="clint">
+          <img src="./images/image-thomas.jpg" alt="clint">
+          <p> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+            enjoyable experience.</p>
+          <div class="name-job">
+            <h4>Thomas S.</h4>
+            <span>Chief Operating Officer</span>
+          </div>
+          <!--name job-->
+        </div> <!-- clint-->
+
+        <div class="clint">
+          <img src="./images/image-jennie.jpg" alt="clint">
+          <p> Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <div class="name-job">
+            <h4>T Jennie F.</h4>
+            <span> Business Owner</span>
+          </div>
+          <!--name job-->
+        </div> <!-- clint-->
+      </div>
+      <!--content-->
+    </div>
+
+    <!-- end Client testimonials -->
+
+    <!-- colurful images -->
+    <div class="our-gallery">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk">
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+      <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="suger">
+    </div>
+  </main>
+  <!-- end main -->
+
+
+
+  <footer>
+    <!-- logo -->
+    <img src="./images/logo-fo.svg" alt="logo">
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Projects</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li><a href="#">
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </a></li>
+
+    </ul>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">asmaa elfatayry</a>.
+  </div> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
