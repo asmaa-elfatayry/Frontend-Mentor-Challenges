@@ -6,8 +6,8 @@
 
 
 
-- Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/]
-- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/]
+- Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/sunnyside-agency-landing-page-main]
+- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/tree/main/junior/sunnyside-agency-landing-page-main/]
 
 
 
