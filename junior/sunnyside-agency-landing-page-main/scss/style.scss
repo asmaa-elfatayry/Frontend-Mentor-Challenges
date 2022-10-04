@@ -18,12 +18,15 @@ $White: hsl(0, 0%, 100%);
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Barlow", "Fraunces", sans-serif;
+    height: 100%;
+  
 }
 header {
     width: 100%;
-    height: 88vh;
+    height: 89vh;
     background-image: url("../images/desktop/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,6 +93,7 @@ header {
         left: 50%;
         transform: translateX(-50%);
         padding-top: 40px;
+        cursor: pointer;
     }
 } //header
 
@@ -205,19 +209,17 @@ main {
                 }
             }
         }
+        .bg-image-brand{
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
         .bg-image-brand:first-child {
             background-image: url("../images/desktop/image-graphic-design.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-
             color: $Dark-desaturated-cyan;
         }
         .bg-image-brand:last-child {
             background-image: url("../images/desktop/image-photography.jpg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
             color: $Dark-blue;
         }
 
@@ -296,7 +298,7 @@ main {
 footer {
     background-color: lighten($color: $Dark-moderate-cyan, $amount: 25%);
     text-align: center;
-    padding: 70px 0;
+    padding: 80px 0;
     img {
         fill: $Dark-desaturated-cyan;
         padding-bottom: 40px;
