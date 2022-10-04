@@ -121,7 +121,7 @@ main {
     .barnd-info-image {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 629px;
+        grid-template-rows: 1fr;
         align-items: center;
 
         .info-brand {
@@ -167,6 +167,7 @@ main {
         } //brand info
 
         .image-brand {
+            height: 100%;
             img {
                 width: 100%;
                 height: 100%;
@@ -429,7 +430,7 @@ footer {
 
         .barnd-info-image {
             grid-template-columns: 1fr;
-            grid-template-rows: 255px;
+            grid-template-rows: 1fr;
 
             .info-brand {
                 margin: auto;
@@ -446,7 +447,7 @@ footer {
         //    two image
         .two-info-image {
             grid-template-columns: 1fr;
-            grid-template-rows: 600px 600px;
+            grid-template-rows: 1fr 1fr;
             .bg-image-brand {
                 position: relative;
 
@@ -468,11 +469,13 @@ footer {
             }
             .bg-image-brand {
                 background-repeat: no-repeat;
-                background-size: cover !important;
+                background-size: cover  !important;
+                height: 540px !important;
                 background-position: top center;
             }
             .bg-image-brand:first-child {
                 background-image: url("../images/mobile/image-graphic-design.jpg");
+            
             }
             .bg-image-brand:last-child {
                 background-image: url("../images/mobile/image-photography.jpg");
@@ -632,13 +635,11 @@ footer {
 
     // start main
     main {
-        .your-brands {
-            gap: 10px;
-        }
+        
 
         .barnd-info-image {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 400px;
+            grid-template-rows: 1fr;
 
             .info-brand {
                 margin: auto;
@@ -653,15 +654,18 @@ footer {
                     font-size: 16px;
                 }
             } //brand info
-            .image-brand img {
-                height: 410px;
+            .image-brand{
+                height: 100%;
+             img {
+                height: 100%;
             }
+        }
         } //brand info image
 
         //    two image
         .two-info-image {
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 600px;
+            grid-template-rows: 1fr;
             .bg-image-brand {
                 position: relative;
 
@@ -685,6 +689,7 @@ footer {
                 background-repeat: no-repeat;
                 background-size: cover !important;
                 background-position: top center;
+                height: 540px;
             }
             .bg-image-brand:first-child {
                 background-image: url("../images/mobile/image-graphic-design.jpg");
