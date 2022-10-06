@@ -5,8 +5,8 @@
 ## Welcome! 👋
 
 
-- Solution URL:  https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/
+- Solution URL:  https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/interactive-card-details-form-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/interactive-card-details-form-main/
 
 
 
