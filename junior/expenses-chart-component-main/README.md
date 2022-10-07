@@ -4,8 +4,8 @@
 
 ## Welcome! 👋
 
-- Solution URL:  https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/interactive-card-details-form-main
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/interactive-card-details-form-main/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/expenses-chart-component-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/expenses-chart-component-main/
 
 
 
