@@ -1,0 +1,221 @@
+$Soft-red: hsl(10, 79%, 65%);
+$Cyan: hsl(186, 34%, 60%);
+
+// ### Neutral
+$Dark-brown: hsl(25, 47%, 15%);
+$Medium-brown: hsl(28, 10%, 53%);
+$Cream: hsl(27, 66%, 92%);
+$Very-pale-orange: hsl(33, 100%, 98%);
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: $Cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 170px auto;
+    font-family: "DM Sans", sans-serif;
+}
+
+.balance {
+    width: 520px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: $Soft-red;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    .my-balance {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: $Cream;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        p {
+            color: $Very-pale-orange;
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+    }
+}
+.chart {
+    background-color: $Very-pale-orange;
+    border-radius: 20px;
+    padding: 25px;
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .all-days {
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        padding: 30px 0;
+
+        .day {
+            display: flex;
+            flex-direction: column-reverse;
+            opacity: 1;
+            gap: 10px;
+            align-items: center;
+
+            .display {
+                background-color: $Dark-brown;
+                color: $Very-pale-orange;
+                padding: 7px 5px;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0px auto;
+                font-weight: 700;
+                display: none;
+                font-size: 12px;
+            }
+
+            span {
+                text-align: center;
+                color: $Medium-brown;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        .chart-orange {
+            background-color: $Soft-red;
+            width: 50px;
+            border-radius: 5px;
+        }
+        .chart-blue {
+            background-color: $Cyan;
+            width: 50px;
+            border-radius: 5px;
+        }
+        .day:nth-child(1) .chart-orange {
+            height: 45px;
+        }
+        .day:nth-child(2) .chart-orange {
+            height: 100px;
+        }
+        .day:nth-child(3) .chart-blue {
+            height: 150px;
+        }
+        .day:nth-child(4) .chart-orange {
+            height: 90px;
+        }
+        .day:nth-child(5) .chart-orange {
+            height: 68px;
+        }
+        .day:nth-child(6) .chart-orange {
+            height: 125px;
+        }
+        .day:nth-child(7) .chart-orange {
+            height: 70px;
+        }
+    }
+    .all-days::after {
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        left: 4%;
+        width: 92%;
+        background-color: $Cream;
+        height: 2px;
+    }
+
+    // total start
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15px 15px;
+
+        p {
+            color: $Medium-brown;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .this-month {
+            h2 {
+                font-size: 39px;
+                color: $Dark-brown;
+            }
+        }
+        .last-month {
+            h2 {
+                font-size: 16px;
+                text-align: right;
+                color: $Dark-brown;
+            }
+        }
+    }
+} //chart
+
+@media (max-width: 375px) {
+    body {
+        margin: 60px auto;
+    }
+
+    .balance {
+        width: 320px;
+        margin-bottom: 10px;
+        padding: 20px;
+        .my-balance {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .chart {
+        padding: 20px;
+        width: 320px;
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .all-days {
+            .day {
+                gap: 10px;
+                align-items: center;
+
+                .display {
+                    padding: 5px 2px;
+                    font-size: 10px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+            }
+            .chart-orange {
+                width: 33px;
+            }
+            .chart-blue {
+                width: 33px;
+            }
+        }
+
+        // total start
+        .total {
+            padding: 20px 5px 10px;
+
+            p {
+                font-size: 14px;
+            }
+            .this-month {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+    } //chart
+}
