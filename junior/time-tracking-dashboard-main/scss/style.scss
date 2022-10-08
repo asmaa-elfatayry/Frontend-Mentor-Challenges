@@ -1,0 +1,302 @@
+$Blue: hsl(246, 80%, 60%);
+$Light-red-w: hsl(15, 100%, 70%); //(work)
+$Soft-blue: hsl(195, 74%, 62%); //(play)
+$Light-red: hsl(348, 100%, 68%); //(study)
+$Lime-green: hsl(145, 58%, 55%); //(exercise)
+$Violet: hsl(264, 64%, 52%); //(social)
+$Soft-orange: hsl(43, 84%, 65%); //(self care)
+//Neutral
+$Very-dark-blue: hsl(226, 43%, 10%);
+$Dark-blue: hsl(235, 46%, 20%);
+$Desaturated-blue: hsl(235, 45%, 61%);
+$Pale-Blue: hsl(236, 100%, 87%);
+
+$font-size0titles: 18px;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: $Very-dark-blue;
+}
+main {
+    margin: 240px 150px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.control {
+    background-color: $Dark-blue;
+    width: 100%;
+    border-radius: 15px;
+    grid-area: "control";
+    .bg-blue {
+        background-color: $Blue;
+        padding: 30px 30px 60px;
+        border-radius: 15px;
+
+        img {
+            width: 70px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+        }
+        span {
+            margin-top: 35px;
+            margin-bottom: 10px;
+            display: block;
+            font-size: 15px;
+            color: $Pale-Blue;
+        }
+        h1 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: 300;
+            padding-bottom: 35px;
+        }
+    } //bg-blue
+    ul {
+        margin: 20px 0;
+    }
+    li {
+        list-style: none;
+        padding: 10px 30px;
+
+        a {
+            text-decoration: none;
+            color: $Pale-Blue;
+        }
+        a.active {
+            color: #fff;
+        }
+    }
+} //control
+
+.my-cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas:
+        " w p s"
+        " e so se";
+    color: #fff;
+    gap: 80px 25px;
+
+    .card {
+        background-color: $Dark-blue;
+        padding: 25px;
+        border-radius: 15px;
+        position: relative;
+
+        .title-icon {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            span {
+                font-weight: 400;
+            }
+            img {
+                width: 18px;
+                height: 4px;
+            }
+            img:hover {
+                cursor: pointer;
+            }
+        }
+        h2 {
+            font-weight: 300;
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: $Pale-Blue;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    .card > img {
+        position: absolute;
+        width: 75px;
+        top: -53px;
+        right: 20px;
+        z-index: -1;
+    }
+    .first .card:nth-child(1) {
+        grid-area: "w";
+    }
+    .first .card:nth-child(1) {
+        grid-area: "p";
+    }
+    .first .card:nth-child(1) {
+        grid-area: "s";
+    }
+    .first .card:nth-child(1) {
+        grid-area: "e";
+    }
+    .first .card:nth-child(1) {
+        grid-area: "so";
+    }
+    .first .card:nth-child(1) {
+        grid-area: "se";
+    }
+    .card::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 60px;
+        top: -54px;
+        right: 0px;
+        z-index: -3;
+        border-radius: 15px 15px 0px 0px;
+        overflow: hidden;
+    }
+    .card:nth-child(1)::before {
+        background-color: $Light-red-w;
+    }
+    .card:nth-child(2)::before {
+        background-color: $Soft-blue;
+    }
+    .card:nth-child(3)::before {
+        background-color: $Light-red;
+    }
+    .card:nth-child(4)::before {
+        background-color: $Lime-green;
+    }
+    .card:nth-child(5)::before {
+        background-color: $Violet;
+    }
+    .card:nth-child(6)::before {
+        background-color: $Soft-orange;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        margin: 70px 20px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .my-cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas: " w " "p" "s" "e" "so" "se";
+
+        color: #fff;
+        gap: 80px 25px;
+    }
+
+    .control {
+        .bg-blue {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            gap: 15px;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+            span {
+                margin-top: 0px;
+                margin-bottom: 5px;
+                display: block;
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 22px;
+                padding-bottom: 0px;
+            }
+        } //bg-blue
+        ul {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li {
+            padding: 10px;
+        }
+    } //control
+    .my-cards {
+        .card {
+            padding: 25px 30px;
+
+            .title-icon {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 26px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 14px;
+                position: absolute;
+                right: 30px;
+                bottom: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width: 376px) and (max-width: 860px) {
+    main {
+        margin: 70px 20px;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .my-cards {
+        margin-top: 50px;
+
+        grid-template-areas:
+            " w p "
+            "s e"
+            "so se";
+    }
+    .control {
+        .bg-blue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            gap: 50px;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+            span {
+                margin-top: 0px;
+                margin-bottom: 5px;
+                display: block;
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 22px;
+                padding-bottom: 0px;
+            }
+        } //bg-blue
+        ul {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        li {
+            padding: 10px;
+        }
+    } //control
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+
+</head>
+
+<body>
+
+  <main>
+    <div class="container  ">
+      <!-- start control -->
+      <div class="control ">
+        <div class="bg-blue">
+          <img src="./images/image-jeremy.png" alt="jeremy">
+          <div>
+            <span>Report for</span>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <ul>
+          <li><a href="#" onclick="Daily('Day')" id="Day">Daily</a> </li>
+          <li><a href="#" class="active" id="Week" onclick="Weekly('Week')">Weekly</a></li>
+          <li><a href="#" onclick="Monthy('Month')" id="Month">Monthly</a></li>
+        </ul>
+      </div>
+      <!--control-->
+
+
+      <div class="my-cards ">
+        <!-- row 1 -->
+
+        <!-- work card -->
+        <div class="  card">
+          <img src="./images/icon-work.svg" alt="work">
+          <div class="title-icon  ">
+            <span>Work</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 32hrs</h2>
+          <p>Last Week -36hrs</p>
+        </div>
+        <!--end col card-->
+
+        <!-- play card -->
+        <div class="  card">
+          <img src="./images/icon-play.svg" alt="play">
+          <div class="title-icon  ">
+            <span> Play</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 10hrs</h2>
+          <p>Last Week 8hrs</p>
+        </div>
+        <!--end col card-->
+
+        <!-- study card -->
+        <div class="  card">
+          <img src="./images/icon-study.svg" alt="study">
+          <div class="title-icon  ">
+            <span> Study</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 4hrs</h2>
+          <p>Last Week 4hrs</p>
+        </div>
+        <!--end col card-->
+
+
+
+
+        <!-- Exercise card -->
+        <div class="  card">
+          <img src="./images/icon-exercise.svg" alt="Exercise">
+          <div class="title-icon  ">
+            <span> Exercise</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 4hrs</h2>
+          <p>Last Week 5hrs</p>
+        </div>
+        <!--end col card-->
+
+        <!-- Social card -->
+        <div class="  card">
+          <img src="./images/icon-social.svg" alt="Social">
+          <div class="title-icon  ">
+            <span>Social</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 5hrs</h2>
+          <p>Last Week 10hrs</p>
+        </div>
+        <!--end col card-->
+
+        <!-- Self Care card -->
+        <div class="  card">
+          <img src="./images/icon-self-care.svg" alt="Self Care">
+          <div class="title-icon  ">
+            <span> Self Care</span>
+            <img src="./images/icon-ellipsis.svg" alt="icon">
+          </div>
+          <h2> 2hrs</h2>
+          <p>Last Week 2hrs</p>
+        </div>
+        <!--end col card-->
+      </div>
+      <!--end my cards-->
+
+    </div>
+    <!--container-->
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">asmaa elfatayry</a>. 
+   </div> -->
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
