@@ -3,8 +3,8 @@
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/
+- Solution URL:https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/time-tracking-dashboard-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/time-tracking-dashboard-main/
 
 
 
