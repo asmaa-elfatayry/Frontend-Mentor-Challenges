@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  <main>
+    <h1>spli <br /> tter</h1>
+    <div class="bill-card">
+      <div class="row">
+        <div class="col-sm-6 col-xm-12 left-sec">
+          <h2>Bill</h2>
+          <div class="bill-input">
+            <input class="bill" type="number" >
+            <img src="./images/icon-dollar.svg" alt="dollar">
+            <span class="error"></span>
+          </div>
+          <h3>Select Tip %</h3>
+
+          <div class="row">
+            <div class="col-sm-4 col-6"><button type="button" name="5">5%</button></div>
+            <div class="col-sm-4 col-6"><button type="button" name="10">10%</button></div>
+            <div class="col-sm-4 col-6"><button type="button" name="15">15%</button></div>
+
+
+            <div class="col-sm-4 col-6"><button type="button" name="25">25%</button></div>
+            <div class="col-sm-4 col-6"><button type="button" name="50">50%</button></div>
+
+            <div class="col-sm-4 col-6 cst"><input class="custome" type="number" placeholder="Custom">
+              <span class="error"></span>
+            </div>
+
+          </div>
+
+          <h3>Number of people</h3>
+          <div class="num-input">
+            <input class="number" type="number">
+            <img src="./images/icon-person.svg" alt="person">
+            <span class="error"></span>
+          </div>
+        </div>
+        <!--left col bill section-->
+        <div class="col-sm-6 col-xm-12 tip-calc">
+          <div class="flex-tip">
+            <div>
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="tip-per">$4.27</div>
+          </div>
+          <!--flex-tip-->
+
+          <div class="total-tip">
+            <div>
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="total-per">$32.79</div>
+          </div>
+          <!--total-tip-->
+          <button class="reset">RESET</button>
+        </div>
+        <!--tip column-->
+      </div>
+      <!--row-->
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">asmaa elfatayry</a>.
+  </div> -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>

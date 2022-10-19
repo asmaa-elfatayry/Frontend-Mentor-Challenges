@@ -1,0 +1,258 @@
+@import "config";
+
+body {
+    background-color: $Light-grayish-cyan;
+    font-family: "Space Mono", sans-serif;
+    font-weight: 700;
+}
+main {
+    margin: 50px auto;
+    h1 {
+        text-align: center;
+        color: $Very-dark-cyan;
+        text-transform: uppercase;
+        letter-spacing: 12px;
+        padding-bottom: 80px;
+    }
+}
+.bill-card {
+    width: 900px;
+    margin: auto;
+    background-color: $White;
+    padding: 30px 40px;
+    border-radius: 25px;
+}
+
+.left-sec {
+    h2 {
+        color: $Dark-grayish-cyan;
+        font-size: 18px;
+    }
+    .bill-input,
+    .num-input {
+        position: relative;
+
+        input {
+            width: 370px;
+            height: 42px;
+            outline: none;
+            border: none;
+            color: $Very-dark-cyan;
+            text-align: right;
+            padding-right: 20px;
+            font-size: 23px;
+            font-weight: bold;
+            background-color: $Very-light-grayish-cyan;
+        }
+
+        img {
+            position: absolute;
+            left: 15px;
+            top: 12px;
+        }
+        .error {
+            display: none;
+            position: absolute;
+            top: -24px;
+            right: 10px;
+            color: #ff6d6d;
+            font-size: 11px;
+        }
+    }
+
+    h3 {
+        font-size: 19px;
+        padding: 30px 0 10px;
+        color: $Dark-grayish-cyan;
+    }
+    .row {
+        width: 95%;
+    }
+    button {
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 15px;
+        height: 45px;
+        background-color: $Very-dark-cyan;
+        color: $White;
+        font-weight: bold;
+    }
+
+    .custome {
+        background-color: $Very-light-grayish-cyan;
+        width: 100%;
+        outline: none;
+        height: 45px;
+        border: none;
+        font-size: 23px;
+
+        text-align: center;
+    }
+    .cst {
+        position: relative;
+        .error {
+            display: none;
+            position: absolute;
+            bottom: -7px;
+            left: 12px;
+            color: #ff6d6d;
+            font-size: 10px;
+        }
+    }
+    input.custome::placeholder {
+        color: $Dark-grayish-cyan;
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+    }
+}
+
+.tip-calc {
+    background-color: $Very-dark-cyan;
+    border-radius: 15px;
+    padding: 55px 30px;
+    color: $White;
+
+    .flex-tip,
+    .total-tip {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+
+        h3 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 13px;
+            color: $Grayish-cyan;
+        }
+        .tip-per,
+        .total-per {
+            font-size: 38px;
+            font-weight: 600;
+            color: $Strong-cyan;
+        }
+    }
+    button {
+        width: 100%;
+        margin-top: 100px;
+        height: 45px;
+        background-color: $Strong-cyan;
+        color: $Very-dark-cyan;
+        border-radius: 5px;
+        border: none;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 375px) {
+    .bill-card {
+        width: 94%;
+        padding: 30px 30px;
+    }
+
+    .left-sec {
+        .bill-input,
+        .num-input {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding-left: 70%;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            padding: 25px 0 10px;
+        }
+
+        .row {
+            width: 100%;
+        }
+        button {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        button.cst {
+            font-size: 22px;
+        }
+    }
+
+    .tip-calc {
+        padding: 30px 25px;
+        margin-top: 40px;
+
+        .flex-tip,
+        .total-tip {
+            padding-bottom: 15px;
+
+            .tip-per,
+            .total-per {
+                font-size: 28px;
+            }
+        }
+        button {
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (min-width: 376px) and (max-width: 850px) {
+    .bill-card {
+        width: 94%;
+        padding: 30px 30px;
+    }
+
+    .left-sec {
+        .bill-input,
+        .num-input {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding-left: 70%;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+            padding: 25px 0 10px;
+        }
+
+        .row {
+            width: 100%;
+        }
+        button {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        button.cst {
+            font-size: 22px;
+        }
+    }
+
+    .tip-calc {
+        padding: 30px 25px;
+        margin-top: 40px;
+
+        .flex-tip,
+        .total-tip {
+            padding-bottom: 15px;
+
+            .tip-per,
+            .total-per {
+                font-size: 28px;
+            }
+        }
+        button {
+            margin-top: 0px;
+        }
+    }
+}

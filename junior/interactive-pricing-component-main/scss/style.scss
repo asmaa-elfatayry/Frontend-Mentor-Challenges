@@ -1,0 +1,249 @@
+@import "_config.scss";
+
+body {
+    background-image: url("../images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-color: $Very-Pale-Blue;
+    width: 100%;
+    height: 100%;
+    font-family: "Manrope", sans-serif;
+}
+main {
+    margin: 60px auto;
+}
+.cricle {
+    text-align: center;
+    background-image: url("../images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 35px 0;
+    h1 {
+        padding-bottom: 20px;
+        color: $Dark-Desaturated-Blue;
+    }
+    p {
+        color: $Grayish-Blue;
+    }
+}
+.card {
+    width: 520px;
+    margin: 20px auto;
+    background-color: $White;
+    padding-top: 30px;
+    border-radius: 5px;
+    .top-sec {
+        padding: 0px 40px;
+    }
+    .flex-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0px 30px;
+        color: $Grayish-Blue;
+
+        .count {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .price {
+            font-weight: 800;
+            font-size: 28px;
+            color: $Dark-Desaturated-Blue;
+        }
+    }
+    .slider {
+        input {
+            width: 100%;
+        }
+        input[type="range"] {
+            width: 100%;
+            -webkit-appearance: none;
+            border-radius: 10000px;
+        }
+        input[type="range"]:focus {
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 10px;
+            cursor: pointer;
+            border-radius: 1000px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background: $Strong-Cyan url("../images/icon-slider.svg") center center no-repeat;
+            box-shadow: 0 15px 20px -8px $Strong-Cyan;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: 5px;
+            transform: translateY(-50%);
+        }
+        input[type="range"]:active {
+            cursor: -webkit-grabbing;
+            cursor: grabbing;
+        }
+    }
+    .section-under-slider {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        align-items: center;
+        color: $Grayish-Blue;
+        padding: 40px 30px 40px 0px;
+        font-size: 12px;
+        .toggle {
+            width: 38px;
+            height: 20px;
+            background-color: $Light-Grayish-Blue;
+            border-radius: 25px;
+            position: relative;
+        }
+        .toggle::before,
+        .toggle::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            border-radius: 50%;
+            height: 15px;
+            background-color: $Very-Pale-Blue;
+            top: 2.4px;
+            cursor: pointer;
+            transition: linear 5s;
+        }
+        .toggle::before {
+            left: 2px;
+        }
+        .toggle::after {
+            right: 2px;
+            display: none;
+        }
+
+        .clicked::before {
+            display: none;
+        }
+        .clicked::after {
+            display: block;
+        }
+        .toggle.clicked,
+        .toggle:hover {
+            background-color: $Soft-Cyan;
+        }
+
+        .discount {
+            background-color: $Light-Grayish-Red;
+            color: $Light-Red;
+            padding: 4px 6px;
+            border-radius: 25px;
+        }
+    }
+    // hr
+    .hr {
+        border-bottom: 1px solid $Light-Grayish-Blue;
+    }
+    .bottom-section {
+        padding: 40px 40px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $Grayish-Blue;
+        li {
+            list-style: none;
+            padding-bottom: 10px;
+            font-size: 15px;
+            img {
+                padding-right: 7px;
+            }
+        }
+        button {
+            background-color: $Dark-Desaturated-Blue;
+            color: $Light-Grayish-Blue-sl;
+            width: 160px;
+            border-radius: 25px;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .cricle {
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            padding: 0 50px;
+            line-height: 1.5;
+        }
+    }
+    .card {
+        width: 90%;
+        padding-top: 30px;
+        .top-sec {
+            padding: 0px 15px;
+
+            .flex-text {
+                flex-direction: column;
+                text-align: center;
+                position: relative;
+                .count {
+                    font-size: 15px;
+                }
+                h2 {
+                    font-size: 15px;
+                    position: absolute;
+                    top: 110px;
+                }
+                .price {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .slider {
+            padding-bottom: 40px;
+            input {
+                width: 100%;
+                background-color: $Light-Grayish-Blue-sl;
+            }
+        }
+        .section-under-slider {
+            justify-content: center;
+            gap: 8px;
+            padding: 40px 0px;
+
+            .toggle {
+                width: 42px;
+            }
+        }
+
+        .bottom-section {
+            padding: 30px 15px;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            ul {
+                padding-bottom: 20px;
+            }
+            li {
+                list-style: none;
+                padding-bottom: 10px;
+                font-size: 15px;
+                img {
+                    padding-right: 5px;
+                }
+            }
+            button {
+                width: 180px;
+            }
+        }
+    }
+}
