@@ -31,6 +31,18 @@ function update() {
     count.innerHTML = fotmatCount(range.value);
     price.textContent = `$${calcPrice(38)}.00`;
   }
+  range.onchange = function () {
+    value = (range.value - range.min) / (range.max - range.min);
+    range.style.backgroundImage = [
+      "-webkit-gradient(",
+      "linear, ",
+      "left top, ",
+      "right top, ",
+      "color-stop(" + value + ",hsl(174, 77%, 80%)), ",
+      "color-stop(" + value + ", hsl(224, 65%, 95%))",
+      ")",
+    ].join("");
+  };
 
   range.onchange = function () {
     value = (range.value - range.min) / (range.max - range.min);
