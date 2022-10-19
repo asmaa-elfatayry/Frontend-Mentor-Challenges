@@ -4,8 +4,8 @@
 
 ## Welcome! 👋
 
-- Solution URL: [https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior]
-- Live Site URL: [https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/Testimonials%20grid%20section/]
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/interactive-pricing-component-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/interactive-pricing-component-main
 
 ### Built with
 
