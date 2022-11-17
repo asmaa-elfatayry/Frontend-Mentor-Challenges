@@ -1,0 +1,416 @@
+@import "./config";
+
+// start header
+header {
+    background: url("../images/bg-pattern-intro-desktop.svg") 600px 400px,
+        linear-gradient(to right, $Very-light-red, $LightRed);
+    border-radius: 0px 0px 0px 85px;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150px;
+
+    nav {
+        color: $White;
+        padding: 50px 150px;
+        .logo {
+            font-size: 35px;
+            padding-right: 20px;
+        }
+        .bloger-nav {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        a {
+            color: $White;
+        }
+        li {
+            position: relative;
+        }
+        li > .head-nav {
+            position: relative;
+            img {
+                margin-left: 5px;
+            }
+        }
+
+        .btn-style {
+            background-color: $White;
+            font-weight: bold;
+            color: $LightRed;
+        }
+        .btn-style:hover {
+            background-color: $Very-light-red-hover;
+            color: $White;
+            cursor: pointer;
+        }
+        .register {
+            p {
+                padding-bottom: 0px;
+            }
+        }
+
+        .hidden {
+            position: absolute;
+            background-color: $White;
+            padding: 15px 20px;
+            border-radius: 5px;
+            top: 40px;
+            left: -10px;
+            width: 120px;
+            li {
+                padding: 3px 0;
+            }
+            a {
+                color: $heading-dark-blue;
+                font-weight: 500;
+                font-size: 13px;
+            }
+            a:hover {
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    } //end nav
+    .intro-text {
+        font-family: "Overpass";
+        h1 {
+            font-size: 40px;
+        }
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        color: $White;
+        padding-top: 80px;
+
+        .btns-intro button:first-child {
+            background-color: $White;
+            color: $LightRed;
+        }
+        .btns-intro button:first-child:hover {
+            background-color: $Very-light-red-hover;
+            color: $White;
+            cursor: pointer;
+        }
+        .btns-intro button:last-child {
+            background-color: transparent;
+            color: $White;
+            border: 1px solid $White;
+        }
+        .btns-intro button:last-child:hover {
+            background-color: $White;
+            color: $Very-light-red-hover;
+            cursor: pointer;
+        }
+    }
+}
+// end header
+@media (max-width: 375px) {
+    header {
+        background: url("../images/bg-pattern-intro-mobile.svg") 400px 400px,
+            linear-gradient(to bottom right, $Very-light-red, $LightRed);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 50px;
+
+        nav {
+            justify-content: space-between;
+            .toggle-munue {
+                display: flex;
+                cursor: pointer;
+            }
+
+            padding: 50px 20px;
+            .bloger-nav {
+                display: none;
+            }
+            .toggle-bloger-nav {
+                display: block;
+                margin: auto;
+                position: absolute;
+                background-color: $White;
+                top: 120px;
+                width: 290px;
+                height: 70vh;
+                padding: 30px 0;
+                border-radius: 5px;
+                box-shadow: 0px 1px 5px #ddd;
+                left: 50%;
+                transform: translateX(-50%);
+                .hidden {
+                    position: static;
+                    background-color: $White;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+                    top: 0px;
+                    left: 0px;
+                    width: 270px;
+                    margin: auto;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+
+                .flex {
+                    display: block;
+                    margin: auto;
+                    text-align: center;
+                    li {
+                        padding: 7px 0;
+                    }
+                    a {
+                        color: $heading-dark-blue;
+                    }
+                }
+                .register {
+                    position: relative;
+                    padding-top: 40px;
+                    gap: 10px;
+                    p {
+                        color: $heading-dark-blue;
+                    }
+                    // border-top: 1px solid $heading-dark-blue;
+                }
+                .register::before {
+                    position: absolute;
+                    content: "";
+                    right: 5%;
+                    width: 90%;
+                    background-color: $Grayish-blue;
+                    height: 1px;
+                    top: 20px;
+                }
+            }
+        } //end nav
+
+        .intro-text {
+            h1 {
+                font-size: 30px;
+                padding: 0 30px;
+            }
+            p {
+                padding: 0 30px;
+            }
+            gap: 20px;
+            padding: 50px 0px;
+            .btns-intro {
+                padding-top: 20px;
+            }
+            .btns-intro button {
+                padding: 15px 25px;
+            }
+        }
+    }
+}
+// start main
+
+main {
+    h2 {
+        font-family: "Overpass";
+        text-align: center;
+        padding-top: 150px;
+        color: $heading-dark-blue;
+        font-weight: 700;
+        font-size: 35px;
+    }
+    h3 {
+        font-family: "Overpass";
+    }
+    .design-future {
+        overflow: hidden;
+        .left-sec {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 100px;
+            padding-right: 50px;
+
+            p {
+                color: $Very-dark-grayish-blue;
+            }
+        }
+        .right-img {
+            width: 50%;
+        }
+    }
+    // start art
+    .art {
+        margin: 150px 0 300px 0;
+        background: url("../images/bg-pattern-circles.svg") -250px -500px,
+            linear-gradient(to right, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+        background-repeat: no-repeat;
+        background-size: auto;
+        padding: 100px 80px;
+        color: $White;
+        position: relative;
+        border-radius: 0px 85px 0px 85px;
+
+        .left-pic {
+            width: 50%;
+            position: absolute;
+            top: -80px;
+        }
+        .right-sec {
+            padding-left: 55%;
+            padding-right: 50px;
+            p {
+                font-weight: 400;
+            }
+        }
+    }
+    // start labtop
+    .labtop {
+        margin: 300px 0;
+
+        .left-pic {
+            width: 50%;
+            position: relative;
+            img {
+                position: absolute;
+                top: -380px;
+                left: -272px;
+            }
+        }
+        .right-sec {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            padding-left: 100px;
+            padding-right: 50px;
+        }
+    }
+}
+// end main
+// start responsive main mobile screen
+@media (max-width: 375px) {
+    main {
+        h2 {
+            padding-top: 80px;
+            font-size: 25px;
+        }
+
+        .design-future {
+            h3 {
+                color: $heading-dark-blue;
+                font-size: 24px;
+                padding: 20px;
+            }
+            flex-direction: column;
+
+            .left-sec {
+                text-align: center;
+                width: 100%;
+                order: 2;
+                padding-left: 50px;
+                padding-right: 50px;
+
+                p {
+                    color: $Very-dark-grayish-blue;
+                }
+            }
+            .right-img {
+                margin: 50px auto;
+                width: 100%;
+                order: 1;
+                img {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+        // start art
+        .art {
+            h3 {
+                font-size: 27px;
+            }
+            flex-direction: column;
+            margin: 150px 0 100px 0;
+            background: url("../images/bg-pattern-circles.svg") -360px -565px,
+                linear-gradient(to right, $Very-dark-gray-blue, $Very-dark-desaturated-blue);
+            background-repeat: no-repeat;
+            padding: 20px;
+            text-align: center;
+            .left-pic {
+                width: 100%;
+
+                top: -150px;
+                img {
+                    width: 100%;
+                }
+            }
+            .right-sec {
+                padding: 180px 20px 40px;
+                font-size: 16px;
+            }
+        }
+        // start labtop
+        .labtop {
+            h3 {
+                color: $heading-dark-blue;
+                font-size: 24px;
+                padding: 16px;
+            }
+            flex-direction: column;
+            margin: 100px 0;
+
+            .left-pic {
+                width: 100%;
+
+                img {
+                    width: 90%;
+                    margin: auto;
+                    position: static;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+            .right-sec {
+                width: 100%;
+                text-align: center;
+                padding-left: 35px;
+                padding-right: 35px;
+            }
+        }
+    }
+    // end main
+}
+
+// start footer
+footer {
+    margin-top: 50px;
+    background-color: $Very-dark-black-blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+    border-radius: 0 85px 0 0;
+    font-family: "Ubuntu";
+    h3 {
+        color: $White;
+    }
+    li {
+        padding: 5px 0;
+    }
+    a {
+        color: $Grayish-blue;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+@media (max-width: 375px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        .logo {
+            padding-bottom: 20px;
+        }
+        h3 {
+            padding: 30px 0 20px;
+        }
+    }
+}
