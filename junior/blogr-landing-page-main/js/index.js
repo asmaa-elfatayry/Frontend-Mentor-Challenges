@@ -1,8 +1,8 @@
-console.log(window.innerWidth);
-let navs = document.querySelectorAll(".head-nav ");
-let menue = document.querySelector(".toggle-munue");
-let close_menue = document.querySelector(".toggle-close");
-let navTog = document.querySelector(".bloger-nav");
+
+const navs = document.querySelectorAll(".head-nav ");
+const menue = document.querySelector(".toggle-munue");
+const close_menue = document.querySelector(".toggle-close");
+const navTog = document.querySelector(".bloger-nav");
 navs.forEach((nav) => {
   nav.addEventListener("click", () => {
     // remove all style first
