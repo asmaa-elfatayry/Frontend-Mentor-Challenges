@@ -4,8 +4,8 @@
 
 ## Welcome! 👋
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/intro-section-with-dropdown-navigation-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/intro-section-with-dropdown-navigation-main
 
 ### Built with
 
