@@ -6,7 +6,7 @@
 
 ### this design responsive only in computer screen and mobile screen (375px)
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/blogr-landing-page-main
 - Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/blogr-landing-page-main/
 
 ### Built with
