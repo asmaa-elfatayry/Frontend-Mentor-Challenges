@@ -8,7 +8,7 @@ nav_drops.forEach((drop) => {
     // reseat the style
     nav_drops.forEach((res) => {
       res.nextElementSibling.nextElementSibling.style.display = "none";
-      drop.nextElementSibling.src = "../images/icon-arrow-down.svg";
+      drop.nextElementSibling.src = "./images/icon-arrow-down.svg";
     });
     // drop the menue
     drop.nextElementSibling.nextElementSibling.style.display = "block";
@@ -22,7 +22,7 @@ nav_drops.forEach((drop) => {
     () => {
       // drop the menue
       drop.nextElementSibling.nextElementSibling.style.display = "none";
-      drop.nextElementSibling.src = "../images/icon-arrow-down.svg";
+      drop.nextElementSibling.src = "./images/icon-arrow-down.svg";
     }
   );
 });
