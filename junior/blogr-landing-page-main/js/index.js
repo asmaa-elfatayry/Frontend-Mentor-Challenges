@@ -27,7 +27,7 @@ navs.forEach((nav) => {
 
 menue.addEventListener("click", () => {
   navs.forEach((nav) => {
-    nav.childNodes[1].src = "../images/icon-arrow-dark.svg";
+    nav.childNodes[1].src = "./images/icon-arrow-dark.svg";
     nav.addEventListener("click", () => {
       nav.nextElementSibling.style.backgroundColor = "rgb(239,239,241)";
     });
