@@ -6,8 +6,8 @@
 
 ### this design responsive only in computer screen and mobile screen (375px)
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/junior/pricing-component-with-toggle-master
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/junior/pricing-component-with-toggle-master
 
 ### Built with
 
