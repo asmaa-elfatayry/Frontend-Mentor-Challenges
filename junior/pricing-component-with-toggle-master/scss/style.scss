@@ -1,0 +1,177 @@
+@import "./config";
+
+body {
+    background: url("../images/bg-top.svg") top right, url("../images/bg-bottom.svg") bottom left;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 400px 350px;
+    background-color: $Very-Light-Grayish-Blue;
+}
+main {
+    padding: 0px 200px;
+
+    h1 {
+        margin: 80px auto 20px;
+        text-align: center;
+        color: $Dark-Grayish-Blue;
+        font-weight: bold;
+    }
+    .toggle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 20px auto;
+        color: $Light-Grayish-Blue;
+
+        .toggle {
+            width: 50px;
+            height: 25px;
+            background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+            border-radius: 25px;
+            position: relative;
+        }
+        .toggle::before,
+        .toggle::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            border-radius: 50%;
+            height: 20px;
+            background-color: $Very-Light-Grayish-Blue;
+            top: 2.4px;
+            transition: 8s;
+            cursor: pointer;
+            transition: linear 5s;
+        }
+        .toggle::before {
+            left: 4px;
+        }
+        .toggle::after {
+            right: 4px;
+
+            display: none;
+        }
+        .toggle.clicked {
+            background: linear-gradient(to right, hsl(237, 57%, 82%), hsl(237, 66%, 76%));
+        }
+        .toggle.clicked::after {
+            display: block;
+        }
+        .toggle.clicked::before {
+            display: none;
+        }
+    }
+    .cards-container {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        .card {
+            width: 350px;
+            text-align: center;
+            padding: 20px 25px;
+            border-radius: 10px;
+            span {
+                margin: 40px 0px 0px;
+                display: block;
+            }
+            h2 {
+                font-size: 54px;
+                margin: 30px 0;
+            }
+            ul {
+                margin-bottom: 30px;
+            }
+            button {
+                width: 100%;
+                height: 40px;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .card:first-of-type,
+        .card:last-of-type {
+            span,
+            li {
+                color: $Dark-Grayish-Blue;
+            }
+            background-color: white;
+            height: 450px;
+
+            li {
+                border-top: 1px solid #b2b4c0a1;
+                padding: 12px 0;
+            }
+            li:last-child {
+                border-bottom: 1px solid #b2b4c0a1;
+            }
+            button {
+                background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+                color: $Very-Light-Grayish-Blue;
+            }
+            button:hover {
+                background: white;
+                color: hsl(237, 63%, 64%);
+                border: 2px solid hsl(237, 63%, 64%);
+            }
+        }
+        .card:nth-child(2) {
+            background: linear-gradient(to top, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+            color: white;
+            height: 500px;
+            li {
+                border-top: 1px solid #ceced4;
+                padding: 12px 0;
+            }
+            li:last-child {
+                border-bottom: 1px solid #ceced4;
+            }
+            button {
+                background-color: $Very-Light-Grayish-Blue;
+                color: hsl(237, 63%, 64%);
+            }
+            button:hover {
+                background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+                border: 2px solid $Very-Light-Grayish-Blue;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        padding: 0px 5px;
+
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .card {
+                width: 95% !important;
+                text-align: center;
+
+                span {
+                    margin: 30px 0px 0px;
+                }
+                h2 {
+                    font-size: 46px;
+                    margin: 30px 0;
+                }
+            }
+            .card:first-of-type,
+            .card:last-of-type {
+                height: 450px;
+            }
+            .card:nth-child(2) {
+                height: 450px;
+            }
+        }
+    }
+}
