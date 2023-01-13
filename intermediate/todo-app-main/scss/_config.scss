@@ -1,0 +1,47 @@
+$color-bg: hsl(0, 0%, 98%);
+$basic: #fff;
+$h2Color: hsl(235, 19%, 35%);
+$placeHolder: hsl(236, 9%, 61%);
+$completedColor: hsl(233, 11%, 84%);
+$activeColor: hsl(220, 98%, 61%);
+
+// dark
+$color-bgd: hsl(235, 21%, 11%);
+$basidark: hsl(235, 24%, 19%);
+$completeDark: hsl(233, 14%, 35%);
+$ColorD: hsl(234, 11%, 52%);
+$h2ColorD: hsl(234, 39%, 85%);
+[data-theme="light"] {
+    --color-bg: #{$color-bg};
+    --h1Text: #{$color-bg};
+    --basic: #{$basic};
+    --h2Color: #{$h2Color};
+    --placeholder: #{$placeHolder};
+    --completed: #{$completedColor};
+    --active: #{$activeColor};
+    --hover: #{$h2Color};
+}
+
+[data-theme="dark"] {
+    --color-bg: #{$color-bgd};
+    --h1Text: #{$color-bg};
+    --basic: #{$basidark};
+    --completed: #{$completeDark};
+    --h2Color: #{$h2ColorD};
+    --active: #{$activeColor};
+    --placeholder: #{$ColorD};
+    --h2Color: #{$h2ColorD};
+    --hover: #{$basic};
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Josefin Sans";
+}
+li {
+    list-style: none;
+}

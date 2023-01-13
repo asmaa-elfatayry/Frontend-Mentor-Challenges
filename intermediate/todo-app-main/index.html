@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+
+<body data-theme="light">
+  <main>
+    <div class="main-bg">
+      <div class="top"></div>
+      <div class="bottom">
+
+        <p> Drag and drop to reorder list</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="top-info">
+
+        <h1>TO DO</h1>
+        <img id="theme" src="./images/icon-moon.svg" alt="moon">
+      </div>
+
+      <div class="todo_container">
+        <div class="create-box">
+          <div class=" create"></div>
+          <input type="text" placeholder="Create a new todo...">
+        </div>
+        <div class="todo-body">
+          <ul id="parent">
+            <li class="lastli">
+              <div><span id="elements">0 </span> item left</div>
+              <div class="options">
+                <span class="active all">All</span>
+                <span class="waiting">Active</span>
+                <span class="complete">Complete</span>
+              </div>
+              <div class="clearCom">Clear Completed</div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Asmaa Elfatayry</a>.
+  </div> -->
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
