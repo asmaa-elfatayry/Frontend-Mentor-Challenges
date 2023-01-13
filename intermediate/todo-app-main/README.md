@@ -5,7 +5,8 @@
 ## Welcome! 👋
 
 - Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/todo-app-main
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/main/intermediate/todo-app-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/todo-app-main/
+
 
 ### Built with
 
