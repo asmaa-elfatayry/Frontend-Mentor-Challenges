@@ -167,3 +167,9 @@ function changeMode() {
     changeTheme.setAttribute("src", "./images/icon-moon.svg");
   }
 }
+
+// drag and drop item
+const dragdragArea = document.querySelector("#parent");
+new Sortable(dragdragArea, {
+  animation: 350,
+});
