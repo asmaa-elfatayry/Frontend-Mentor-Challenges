@@ -151,7 +151,7 @@ changeTheme.addEventListener("click", () => {
 function changeMode() {
   if (changeTheme.classList.contains("darkactive")) {
     if (window.innerWidth > 375) {
-      topImgBg.style.backgroundImage = 'url("../images/bg-desktop-dark.jpg")';
+      topImgBg.style.backgroundImage = 'url("./images/bg-desktop-dark.jpg")';
     } else {
       topImgBg.style.backgroundImage = 'url("../images/bg-mobile-dark.jpg")';
     }
