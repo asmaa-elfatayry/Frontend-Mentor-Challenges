@@ -153,15 +153,15 @@ function changeMode() {
     if (window.innerWidth > 375) {
       topImgBg.style.backgroundImage = 'url("./images/bg-desktop-dark.jpg")';
     } else {
-      topImgBg.style.backgroundImage = 'url("../images/bg-mobile-dark.jpg")';
+      topImgBg.style.backgroundImage = 'url("./images/bg-mobile-dark.jpg")';
     }
     document.body.setAttribute("data-theme", "dark");
     changeTheme.setAttribute("src", "./images/icon-sun.svg");
   } else {
     if (window.innerWidth > 375) {
-      topImgBg.style.backgroundImage = 'url("../images/bg-desktop-light.jpg")';
+      topImgBg.style.backgroundImage = 'url("./images/bg-desktop-light.jpg")';
     } else {
-      topImgBg.style.backgroundImage = 'url("../images/bg-mobile-light.jpg")';
+      topImgBg.style.backgroundImage = 'url("./images/bg-mobile-light.jpg")';
     }
     document.body.setAttribute("data-theme", "light");
     changeTheme.setAttribute("src", "./images/icon-moon.svg");
