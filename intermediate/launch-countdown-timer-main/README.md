@@ -6,8 +6,8 @@
 
 ## Welcome! 👋
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/chat-app-css-illustration-master
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/chat-app-css-illustration-master/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/launch-countdown-timer-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/launch-countdown-timer-main/
 
 ### Built with
 
