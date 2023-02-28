@@ -5,7 +5,7 @@
 ## Welcome! 👋
 
 - Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/ecommerce-product-page-main
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/tree/main/intermediate/ecommerce-product-page-main/
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/ecommerce-product-page-main/
 
 ### Built with
 
