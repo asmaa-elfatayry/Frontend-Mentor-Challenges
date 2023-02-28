@@ -1,0 +1,589 @@
+@import "./config";
+// start navbar
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 150px;
+    padding: 26px 0;
+    border-bottom: 1px solid $Grayish-blue;
+    .toggle {
+        display: none;
+    }
+    .left-sec {
+        @include center-items;
+        gap: 50px;
+    }
+    ul {
+        @include center-items;
+        gap: 30px;
+        img {
+            display: none;
+        }
+
+        a {
+            color: $Dark-grayish-blue;
+            height: 100%;
+            padding: 40px 0;
+        }
+        a:hover {
+            color: $Black;
+            border-bottom: 3px solid $Orange;
+        }
+    }
+    // profile right section
+    .profile {
+        position: relative;
+        img.avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        img.avatar:hover {
+            border: 2px solid $Orange;
+            cursor: pointer;
+        }
+        @include center-items;
+        gap: 30px;
+        // mycart section this appear when user click on his avatar pic
+        .mycart {
+            position: absolute;
+            display: none;
+            top: 60px;
+            width: 350px;
+            right: 0px;
+            padding: 20px 0px;
+            background-color: $White;
+            box-shadow: 0px 3px 16px hsla(0, 0%, 0%, 0.19);
+            h4 {
+                padding-bottom: 20px;
+                padding-left: 20px;
+                border-bottom: 1px solid $Grayish-blue;
+            }
+            p {
+                text-align: center;
+                padding: 40px 0;
+                font-weight: 700;
+                color: $Dark-grayish-blue;
+                font-size: 15px;
+            }
+            .container {
+                padding: 0 20px;
+            }
+            .orderStyle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0;
+
+                img:first-child {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 7px;
+                }
+                p {
+                    padding: 5px 0;
+                    color: $Dark-grayish-blue;
+                    font-weight: 500;
+                }
+                span:first-of-type {
+                    color: $Dark-grayish-blue;
+                    font-weight: 500;
+                    padding-right: 7px;
+                }
+                span:last-of-type {
+                    color: $Black;
+                    font-weight: 700;
+                }
+            }
+            button {
+                background-color: $Orange;
+                color: $White;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                padding: 15px 0;
+                font-weight: 700;
+            }
+            button:hover {
+                cursor: pointer;
+                background-color: hsla(26, 100%, 55%, 0.566);
+            }
+        }
+        // number of product on cart icon
+        .spanNo {
+            position: absolute;
+            background-color: $Orange;
+            padding: 2px 10px;
+            border-radius: 15px;
+            top: -1px;
+            left: 8px;
+            color: $White;
+            font-weight: bold;
+            font-size: 10px;
+            z-index: 3;
+        }
+    }
+}
+// end navbar
+// start main
+main {
+    margin: 100px auto;
+    padding: 0 200px;
+    // overlay will apear when open product image
+    .overlay-main {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 112%;
+        background-color: rgba(0, 0, 0, 0.692);
+        z-index: 10000;
+        display: none;
+        justify-content: center;
+        svg {
+            position: absolute;
+            top: 100px;
+            left: 66%;
+            transform: translateX(-50%);
+            fill: #69707d;
+        }
+        svg:hover {
+            fill: $Orange;
+            cursor: pointer;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .p-overlay {
+                position: relative;
+
+                svg {
+                    position: absolute;
+                    top: 48%;
+                    width: 42px;
+                    height: 42px;
+                    background-color: $White;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 14px;
+                    stroke: #1d2026;
+                }
+                svg:hover {
+                    stroke: $Orange;
+                }
+                .next {
+                    left: 500px;
+                }
+                .prev {
+                    left: -1px;
+                }
+            }
+            img:first-child {
+                width: 500px;
+                border-radius: 10px;
+            }
+            ul {
+                justify-content: center;
+                position: relative;
+            }
+            li {
+                img {
+                    width: 90px;
+                    height: 90px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    // end overlay
+    // start product container in main
+    .container {
+        @include center-items;
+        gap: 12%;
+        justify-content: center;
+
+        .products {
+            width: 45%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .details {
+            width: 40%;
+            span {
+                color: $Orange;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 30px;
+                display: block;
+            }
+            h1 {
+                font-weight: 700;
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            p {
+                line-height: 1.6;
+                color: $Dark-grayish-blue;
+                margin: 30px 0;
+            }
+            h3 {
+                font-size: 27px;
+                span {
+                    display: inline-block;
+                    font-size: 18px;
+                    background-color: $Pale-orange;
+                    padding: 3px 8px;
+                    border-radius: 4px;
+                    margin-bottom: 18px;
+                    margin-left: 10px;
+                }
+            }
+            h4 {
+                color: $Grayish-blue;
+                text-decoration: line-through;
+            }
+            .cart {
+                margin-top: 40px;
+                @include center-items;
+                gap: 15px;
+                .num-product {
+                    border-radius: 10px;
+                    @include center-items;
+                    justify-content: space-evenly;
+                    width: 150px;
+                    height: 55px;
+                    background-color: $Light-grayish-blue;
+                    span {
+                        margin-bottom: 0px;
+                        color: $Black;
+                    }
+                    img {
+                        cursor: pointer;
+                    }
+                }
+                button {
+                    background-color: $Orange;
+                    color: $White;
+                    width: 270px;
+                    height: 55px;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-weight: 700;
+                    @include center-items;
+                    gap: 15px;
+                    justify-content: center;
+                    outline: none;
+                    border: none;
+                    font-size: 18px;
+                }
+                button:hover {
+                    background-color: hsla(26, 100%, 55%, 0.566);
+                    cursor: pointer;
+                }
+            }
+        }
+        // end details
+    }
+    // end products container
+    ul {
+        @include center-items;
+        gap: 25px;
+        margin-top: 20px;
+
+        li {
+            position: relative;
+
+            .overlay {
+                position: absolute;
+                left: 3%;
+                top: 3%;
+                width: 94%;
+                cursor: pointer;
+                border-radius: 7px;
+                height: 89.5%;
+                background-color: hsla(25, 100%, 94%, 0.796);
+                display: none;
+                z-index: 100;
+            }
+        }
+        li:hover .overlay {
+            display: block;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 96%;
+        }
+
+        img.active {
+            border: 3px solid $Orange;
+            position: relative;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+    // ./ul
+}
+// end main
+//  mobile screen
+@media (max-width: 375px) {
+    nav {
+        margin: 0px;
+        padding: 26px 15px;
+
+        h2 {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .toggle {
+            display: block;
+            cursor: pointer;
+        }
+        .left-sec {
+            gap: 0px;
+        }
+        ul {
+            background-color: $White;
+            position: absolute;
+            flex-direction: column;
+            left: 0px;
+            top: 0px;
+            height: 100vh;
+            gap: 15px;
+            display: none;
+            width: 200px;
+            align-items: flex-start;
+            padding: 20px;
+            font-weight: 700;
+            z-index: 100;
+            img {
+                display: block;
+                margin-bottom: 40px;
+                cursor: pointer;
+            }
+            a {
+                padding: 10px 0;
+                color: $Black;
+            }
+            a:hover {
+                border-bottom: 2px solid $Orange;
+            }
+        }
+        // profile right section
+        .profile {
+            img.avatar {
+                width: 38px;
+                height: 38px;
+            }
+
+            gap: 15px;
+            // mycart section this appear when user click on his avatar pic
+            .mycart {
+                top: 80px;
+                max-width: 310px;
+
+                z-index: 100;
+
+                left: 50%;
+
+                transform: translateX(-86%);
+
+                p {
+                    font-size: 13px;
+                }
+
+                .orderStyle {
+                    span:first-of-type {
+                        font-size: 14px;
+                    }
+                    span:last-of-type {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    // end navbar
+    // start main
+    main {
+        margin: 0px auto;
+        padding: 0 0px;
+        // overlay will apear when open product image
+        .overlay-main {
+            display: flex;
+            background-color: transparent;
+            width: 100%;
+            top: 92px;
+            height: 325px;
+            z-index: 10;
+
+            svg {
+                display: none;
+            }
+
+            .products {
+                display: flex;
+                ul {
+                    display: none;
+                }
+
+                .p-overlay {
+                    display: flex;
+
+                    svg {
+                        top: -40px;
+
+                        border-radius: 50%;
+                    }
+
+                    .next {
+                        left: 144px;
+                    }
+                    .prev {
+                        left: -144px;
+                    }
+                }
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+        // end overlay
+        // start product container in main
+        .container {
+            @include center-items;
+            gap: 2%;
+            flex-direction: column;
+            justify-content: center;
+
+            .products {
+                width: 100%;
+
+                img {
+                    border-radius: 0px;
+                    height: 290px;
+                }
+                ul {
+                    display: none;
+                }
+            }
+            .details {
+                width: 100%;
+                padding: 20px;
+                span {
+                    font-size: 14px;
+                }
+                h1 {
+                    font-size: 27px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    font-size: 14px;
+                    margin: 15px 0;
+                }
+                h3 {
+                    font-size: 25px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                h4 {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 187px;
+                }
+                .cart {
+                    margin-top: 20px;
+
+                    flex-direction: column;
+                    gap: 15px;
+                    .num-product {
+                        width: 100%;
+                    }
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+            // end details
+            .overlay {
+                background-color: transparent;
+            }
+        }
+        // end products container
+    }
+    // end main
+}
+// medium screen
+@media (min-width: 376px) and (max-width: 899px) {
+    nav {
+        gap: 20px;
+
+        padding: 6px 0;
+        flex-direction: column;
+        ul {
+            a {
+                padding: 10px 0;
+            }
+        }
+        .left-sec {
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+
+    main {
+        .overlay-main svg {
+            top: 363px;
+            left: 90%;
+        }
+        .container {
+            gap: 22%;
+
+            flex-direction: column;
+
+            .products {
+                width: 80%;
+
+                img {
+                    width: 100%;
+                    margin: auto;
+                    border-radius: 10px;
+                }
+            }
+            .details {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+
+        margin: 100px auto;
+        padding: 0 20px;
+    }
+}
+// large screen
+@media (min-width: 900px) and (max-width: 1200px) {
+    main {
+        margin: 100px auto;
+        padding: 0 100px;
+    }
+    main .overlay-main svg {
+        top: 60px;
+        left: 70%;
+    }
+}
