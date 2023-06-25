@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+
+
+</head>
+
+<body>
+  <main>
+    <div class="overlay">
+      <div class="content">
+        <h2>Rules</h2>
+        <img src="images/image-rules.svg" alt="rules image">
+        <img class="close" src="images/icon-close.svg" alt="close">
+      </div>
+    </div>
+    <div class="description-box">
+      <div class="names">
+        <p>rock</p>
+        <p>paper</p>
+        <p>Scissors</p>
+      </div>
+      <div class="score">
+        <p> Score</p>
+        <h1 id="score-no"></h1>
+      </div>
+
+
+    </div>
+    <!-- end description box -->
+    <div class="game-body">
+      <div class="game-icons">
+        <div class="bg-traingle">
+          <img src="./images/bg-triangle.svg" alt="bg traingle">
+        </div>
+
+        <div class="paper-container circle">
+          <div class="icon">
+            <div class="shadow"> </div>
+            <img src="./images/icon-paper.svg" alt="paper icon">
+          </div>
+        </div>
+
+
+
+        <div class="scissor-container circle">
+          <div class="icon">
+            <div class="shadow"> </div>
+            <img src="./images/icon-scissors.svg" alt="Scissors icon">
+
+          </div>
+        </div>
+
+        <div class="rock-container circle">
+          <div class="icon">
+            <div class="shadow"> </div>
+            <img src="./images/icon-rock.svg" alt="rock icon">
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <!-- 
+
+    You Picked
+    The House Picked
+
+    You Win
+    You Lose
+
+    Play Again -->
+
+    <button type="button" onclick="ShowRule()">Rules</button>
+  </main>
+
+  <!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Asmaa Elfatayry</a>.
+  </div> -->
+
+  <script src="js/jquery-3.7.0-min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
