@@ -4,8 +4,8 @@
 
 ## Welcome! 👋
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/advanced/
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/advanced/rock-paper-scissors-master
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/advanced/rock-paper-scissors-master
 
 ### Built with
 
