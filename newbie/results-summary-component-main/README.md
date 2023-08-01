@@ -5,8 +5,8 @@
 
 ## Welcome! 👋
 
-- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/j
-- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/
+- Solution URL: https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/newbie/results-summary-component-main
+- Live Site URL: https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/newbie/results-summary-component-main
 
 
 ### Built with
