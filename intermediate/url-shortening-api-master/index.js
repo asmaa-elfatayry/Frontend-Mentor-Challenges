@@ -99,12 +99,12 @@ parentElem.insertBefore(div, parentElem.firstChild);
 }
 
 if(window.innerWidth<375){
-document.querySelector('.link-sec').setAttribute('src','./images/bg-shorten-mobile.svg')
-document.querySelector('.boost').setAttribute('src','./images/bg-shorten-mobile.svg')
+document.querySelector('.link-sec').setAttribute('backgroundImage',"url('./images/bg-shorten-mobile.svg')")
+document.querySelector('.boost').setAttribute('backgroundImage',"url('./images/bg-shorten-mobile.svg')")
 
 }else{
-    document.querySelector('.link-sec').setAttribute('src','./images/bg-boost-desktop.svg'); 
-    document.querySelector('.boost').setAttribute('src','./images/bg-boost-desktop.svg')
+    document.querySelector('.link-sec').setAttribute('backgroundImage',"url('./images/bg-boost-desktop.svg')"); 
+    document.querySelector('.boost').setAttribute('backgroundImage',"url('./images/bg-boost-desktop.svg')");
 }
 
 
