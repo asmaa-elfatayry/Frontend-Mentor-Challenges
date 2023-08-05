@@ -13,7 +13,7 @@ You can find the solution code in this repository: [GitHub Solution](https://git
 
 ## Live Site
 
-You can view the live site here: [Launch Countdown Timer](https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/url-shortening-api-master)
+You can view the live site here: [Launch Shortly](https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/url-shortening-api-master)
 
 
 
