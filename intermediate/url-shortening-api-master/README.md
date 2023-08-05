@@ -9,11 +9,11 @@ A straightforward web application that shortens long URLs using the "piter" API.
 
 ## Solution
 
-You can find the solution code in this repository: [GitHub Solution](https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/)
+You can find the solution code in this repository: [GitHub Solution](https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/tree/main/intermediate/url-shortening-api-master)
 
 ## Live Site
 
-You can view the live site here: [Launch Countdown Timer](https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/)
+You can view the live site here: [Launch Countdown Timer](https://asmaa-elfatayry.github.io/Frontend-Mentor-Challenges/intermediate/url-shortening-api-master)
 
 
 
