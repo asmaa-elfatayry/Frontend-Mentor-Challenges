@@ -98,15 +98,14 @@ div.append(longParg,innerDiv);
 parentElem.insertBefore(div, parentElem.firstChild); 
 }
 
-if(window.innerWidth<375){
-document.querySelector('.link-sec').setAttribute('backgroundImage',"url('./images/bg-shorten-mobile.svg')")
-document.querySelector('.boost').setAttribute('backgroundImage',"url('./images/bg-shorten-mobile.svg')")
-
-}else{
-    document.querySelector('.link-sec').setAttribute('backgroundImage',"url('./images/bg-boost-desktop.svg')"); 
-    document.querySelector('.boost').setAttribute('backgroundImage',"url('./images/bg-boost-desktop.svg')");
-}
-
+if (window.innerWidth < 375) {
+    document.querySelector('.link-sec').style.backgroundImage = "url('./images/bg-shorten-mobile.svg')";
+    document.querySelector('.boost').style.backgroundImage = "url('./images/bg-shorten-mobile.svg')";
+  } else {
+    document.querySelector('.link-sec').style.backgroundImage = "url('./images/bg-boost-desktop.svg')";
+    document.querySelector('.boost').style.backgroundImage = "url('./images/bg-boost-desktop.svg')";
+  }
+  
 
 
   
