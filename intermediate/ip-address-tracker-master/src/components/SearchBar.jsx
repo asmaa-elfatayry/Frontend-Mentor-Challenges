@@ -5,7 +5,6 @@ const SearchBar = ({ setIPAddress, fetchLocation }) => {
     const [ipAddress, setIpAddress] = useState('');
 
     const handleClick = () => {
-        console.log("ss");
         setIPAddress(ipAddress);
         fetchLocation(ipAddress);
     };
