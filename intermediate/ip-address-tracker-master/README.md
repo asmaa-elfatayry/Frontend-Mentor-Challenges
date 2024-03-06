@@ -33,7 +33,8 @@ To run the IP Tracker locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ip-tracker.git
+git clone https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/intermediate
+/ip-address-tracker-master.git
 ```
 
 2. Navigate to the project directory:
@@ -60,11 +61,3 @@ npm start
 
 If you would like to contribute to IP Tracker, feel free to fork the repository and submit pull requests. All contributions are welcome!
 
-
-## Contact
-
-For any questions, feedback, or suggestions, please contact us at example@example.com. We'd love to hear from you!
-
-
-
-Feel free to customize the README further based on your preferences and additional information about the project.
