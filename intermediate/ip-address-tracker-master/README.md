@@ -1,6 +1,5 @@
 # IP Address Tracker
 
-![IP Tracker](https://frontend-mentor-challenges-six-mocha.vercel.app/)
 
 IP Tracker is a web application that allows users to track the location, timezone, and ISP (Internet Service Provider) of a given IP address.
 
