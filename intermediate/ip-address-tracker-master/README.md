@@ -61,11 +61,3 @@ npm start
 
 If you would like to contribute to IP Tracker, feel free to fork the repository and submit pull requests. All contributions are welcome!
 
-
-## Contact
-
-For any questions, feedback, or suggestions, please contact us at example@example.com. We'd love to hear from you!
-
-
-
-Feel free to customize the README further based on your preferences and additional information about the project.
