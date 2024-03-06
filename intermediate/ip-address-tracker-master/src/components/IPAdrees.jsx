@@ -11,7 +11,7 @@ const IPAddress = () => {
     const [ISP, setISP] = useState('');
     const [coordinates, setCoordinates] = useState({});
     
-  //  https://geo.ipify.org/api/v2/country,city?apiKey=at_JzylBXQYiu09gvnVAfbEl95iroCPU&ipAddress=197.42.6.155
+ 
   const fetchLocation = async (ipAddress = '') => {
     try {
         const response = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ipAddress}`);
