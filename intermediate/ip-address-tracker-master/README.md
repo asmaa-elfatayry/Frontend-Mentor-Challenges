@@ -33,7 +33,8 @@ To run the IP Tracker locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ip-tracker.git
+git clone https://github.com/asmaa-elfatayry/Frontend-Mentor-Challenges/intermediate
+/ip-address-tracker-master.git
 ```
 
 2. Navigate to the project directory:
